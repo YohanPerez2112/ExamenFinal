@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="../styles/css productos/Jardineria.css">
+<style>
+ 
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" />
+    </div>
+    <nav>
+      <div class="menu-hamburguesa" id="menuHamburguesa">&#9776;</div>
+      <ul id="menuPrincipal">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        <li><a id="abrirCarrito" href="javascript:void(0)">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="fondoMenuMovil"></div>
+  <div class="subnav">
+    <a href="../Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="../Productos/Avicola.html">Avícola</a>
+    <a href="../Productos/Herrramientas.html">Herramientas</a>
+    <a href="../Productos/Riego.html">Riego</a>
+    <a href="../Productos/Cercas.html">Cercas</a>
+    <a href="../Productos/Jardineria.html">Jardinería</a>
+    <a href="../Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="tienda-header">
+    <div>
+      <h2>Jardineria</h2>
+    </div>
+   
+    <div style="margin-left:20px; display: flex; align-items: center; max-width: 270px; position: relative;">
+      <input
+        type="text"
+        id="busquedaProducto"
+        placeholder="Buscar producto..."
+        style="padding:8px 36px 8px 12px; border-radius:6px; border:1px solid #ccc; font-size:16px; width: 100%;"
+      >
+      <span style="position:absolute; right:10px; top:50%; transform:translateY(-50%); pointer-events:none; color:#888;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div class="productos-grid" id="productosGrid">
+
+    <div class="producto" data-nombre="Juego de jardinería x3 de 11">
+      <img src="../img/Juego de jardinería x3 de 11.webp" alt="Juego de jardinería x3 de 11" />
+      <h3>Juego de jardinería x3 de 11"</h3>
+      <p>$15,000.00</p>
+      <p class="descripcion" style="display:none;">
+      Juego de jardinería de 11" , 28 cm 
+      Material polipropileno
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Soporte con ruedas">
+      <img src="../img/Soporte con ruedas.webp" alt="Soporte con ruedas" />
+      <h3>Soporte con ruedas</h3>
+      <p>$21,500.00</p>
+      <p class="descripcion" style="display:none;">
+       Soporte plástico para matera con rodachines
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Soporte fijo para materas">
+      <img src="../img/Soporte fijo para materas.webp" alt="Soporte fijo para materas" />
+      <h3>Soporte fijo para materas</h3>
+      <p>$9,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Soporte para materas plástico fijo
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    
+    <div class="producto" data-nombre="Regadera 4 L" style="display:none;">
+      <img src="../img/Regadera 4 L.webp" alt="Regadera 4 L" />
+      <h3>Regadera 4 L</h3>
+      <p>$15,600.00</p>
+      <p class="descripcion" style="display:none;">
+        Regadera plastica de 4 litros
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Regadera de 8 L" style="display:none;">
+      <img src="../img/Regadera de 8 L.webp" alt="Regadera de 8 L" />
+      <h3>Regadera de 8 L</h3>
+      <p>$18,250.00</p>
+      <p class="descripcion" style="display:none;">
+        Regadera de jardín con 8 litros de capacidad material plástico
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Semilla Maní forrajero 1 Lb" style="display:none;">
+      <img src="../img/Semilla Maní forrajero 1 Lb.webp" alt="Semilla Maní forrajero 1 Lb" />
+      <h3>Semilla Maní forrajero 1 Lb</h3>
+      <p>$70,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El maní forrajero es una leguminosa rastrera perenne, altamente valorada en sistemas 
+        agropecuarios por su alto contenido proteico, su capacidad para fijar nitrógeno atmosférico y 
+        su uso como cobertura vegetal viva.Es ideal para mejorar suelos, alimentación animal y control de erosión.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Semilla Salvia 1 gr" style="display:none;">
+      <img src="../img/Semilla Salvia 1 gr.webp" alt="Semilla Salvia 1 gr"/>
+      <h3>Semilla Salvia 1 gr</h3>
+      <p>$2,800.00</p>
+      <p class="descripcion" style="display:none;">
+       Aromática de sabor fuerte. Ideal para carnes, aceites y uso medicinal. Planta perenne y resistente.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Semilla Valeriana 1 gr" style="display:none;">
+      <img src="../img/Semilla Valeriana 1 gr.webp" alt="Semilla Valeriana 1 gr" />
+      <h3>Semilla Valeriana 1 gr</h3>
+      <p>$5,200.00</p>
+      <p class="descripcion" style="display:none;">
+        Calmante natural. Sus raíces se usan para tratar el insomnio y la ansiedad. Planta de crecimiento lento.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Semilla Ruda 1 gr" style="display:none;">
+      <img src="../img/Semilla Ruda 1 gr.webp" alt="Semilla Ruda 1 gr" />
+      <h3>Semilla Ruda 1 gr</h3>
+      <p>$2,700.00</p>
+      <p class="descripcion" style="display:none;">
+        Planta medicinal tradicional. Se cultiva por sus propiedades protectoras y curativas.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+         <div class="producto" data-nombre="Semilla Albahaca 1 gr" style="display:none;">
+      <img src="../img/Semilla Albahaca 1 gr.webp" alt="Semilla Albahaca 1 gr" />
+      <h3>Semilla Albahaca 1 gr</h3>
+      <p>$2,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Aromática y deliciosa, ideal para realzar el sabor de tus platillos. Crece rápido y es perfecta para jardines, macetas o huertos urbanos.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+
+    
+
+    
+  </div>
+  <div id="vistaRapidaModal">
+    <div class="modal-content">
+      <span id="cerrarModal">&times;</span>
+      <img id="modalImagen" src="" alt="" />
+      <h3 id="modalTitulo"></h3>
+      <p id="modalPrecio"></p>
+      <p class="descripcion" id="modalDescripcion"></p>
+      <button id="modalComprarBtn" style="width:100%; padding:10px; background-color:#0a3e12; color:white; border:none; border-radius:4px; font-weight:bold;">Comprar ahora</button>
+    </div>
+  </div>
+
+  <div id="carritoLateral">
+    <button id="cerrarCarritoBtn">Cerrar carrito</button>
+    <h3>Tu carrito</h3>
+    <div id="carritoLista"></div>
+    <button id="comprarTodoBtn">Comprar todo</button>
+  </div>
+  <script src="../scripts/productosJs/jardineria.js"></script>
+</body>
+</html>

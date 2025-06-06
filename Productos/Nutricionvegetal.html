@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="../styles/css productos/Nutricionvegetal.css">
+<style>
+ 
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" />
+    </div>
+    <nav>
+      <div class="menu-hamburguesa" id="menuHamburguesa">&#9776;</div>
+      <ul id="menuPrincipal">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        <li><a id="abrirCarrito" href="javascript:void(0)">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="fondoMenuMovil"></div>
+  <div class="subnav">
+    <a href="../Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="../Productos/Avicola.html">Avícola</a>
+    <a href="../Productos/Herrramientas.html">Herramientas</a>
+    <a href="../Productos/Riego.html">Riego</a>
+    <a href="../Productos/Cercas.html">Cercas</a>
+    <a href="../Productos/Jardineria.html">Jardinería</a>
+    <a href="../Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="tienda-header">
+    <div>
+      <h2>Nutricion Vegetal</h2>
+    </div>
+   
+    <div style="margin-left:20px; display: flex; align-items: center; max-width: 270px; position: relative;">
+      <input
+        type="text"
+        id="busquedaProducto"
+        placeholder="Buscar producto..."
+        style="padding:8px 36px 8px 12px; border-radius:6px; border:1px solid #ccc; font-size:16px; width: 100%;"
+      >
+      <span style="position:absolute; right:10px; top:50%; transform:translateY(-50%); pointer-events:none; color:#888;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div class="productos-grid" id="productosGrid">
+
+    <div class="producto" data-nombre="Centauro 720 SC">
+      <img src="../img/Centauro 720 SC.webp" alt="Centauro 720 SC" />
+      <h3>Centauro 720 SC</h3>
+      <p>$30,000.00</p>
+      <p class="descripcion" style="display:none;">
+      Fungicida preventivo de amplio espectro, su acción fungicida se realiza por inhibición del proceso de respiración celular .
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Belico 500 SC">
+      <img src="../img/Bélico 500 SC.webp" alt="Bélico 500 SC" />
+      <h3>Bélico 500 SC</h3>
+      <p>$29,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Fungicida sistémico con acción preventiva y curativa de rápida penetración y amplio espectro, 
+       usado para el control de enfermedades causadas por hongos. Se recomienda para ser incluido dentro
+       de los programas de rotación de fungicidas en los cultivos registrados.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Invetrina 200 EC">
+      <img src="../img/Invetrina 200 EC.webp" alt="Invetrina 200 EC" />
+      <h3>Invetrina 200 EC</h3>
+      <p>$30,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Insecticida piretroide, formulado como concentrado emulsionable, que actúa por contacto e ingestión, 
+        estable en condiciones ambientales y resistente al lavado por lluvias, lo que le permite mantener una efectividad más duradera.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    
+    <div class="producto" data-nombre="Panzer 648 SL" style="display:none;">
+      <img src="../img/Panzer 648 SL.webp" alt="Panzer 648 SL" />
+      <h3>Panzer 648 SL</h3>
+      <p>$31,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Herbicida sistémico no selectivo de absorción foliar. Inhibe las enzimas que controlan la síntesis de los aminoácidos aromáticos esenciales. 
+        Penetra por las hojas y se mueve por las partes aéreas y subterráneas de las plantas causando la muerte total de las malezas, después de su 
+        aplicación es inactivo en el suelo.No deja residuos que afecten las siembras posteriores y no penetra por las raíces de cultivos ya establecidos.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Gramafin SL" style="display:none;">
+      <img src="../img/Gramafin SL.webp" alt="Gramafin SL" />
+      <h3>Gramafin SL</h3>
+      <p>$16,800.00</p>
+      <p class="descripcion" style="display:none;">
+        Herbicida no selectivo, no sistémico el cual actúa por contacto. Controla una amplia gama de malezas en diferentes cultivos.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Destierro 280 SL" style="display:none;">
+      <img src="../img/Destierro 280 SL.webp" alt="Destierro 280 SL" />
+      <h3>Destierro 280 SL</h3>
+      <p>$70,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Herbicida que tiene como ingrediente activo glufosinato en forma de sal amonio.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Destierro 200 SL 1L" style="display:none;">
+      <img src="../img/Destierro 200 SL 1L.webp" alt="Destierro 200 SL 1L"/>
+      <h3>Destierro 200 SL 1L</h3>
+      <p>$26,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Herbicida no selectivo, de contacto (con algún tipo de acción sistémica), de amplio espectro, que en ocasiones es utilizado para desecar material
+       vegetal de cultivos antes de la cosecha. Su aplicación conduce a la reducción de la glutamina y al aumento de los niveles de amoníaco en los tejidos 
+       vegetales, deteniendo el proceso de fotosíntesis y produciendo la muerte de la planta en pocos días.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Partner 50 WP 22 gr" style="display:none;">
+      <img src="../img/Partner 50 WP 22 gr.webp" alt="Partner 50 WP 22 gr" />
+      <h3>Partner 50 WP 22 gr</h3>
+      <p>$5,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Herbicida para ser mezclado con agua y aplicado en aspersión directa sobre el follaje, para el control selectivo de malezas de hoja ancha.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    
+       <div class="producto" data-nombre="Spider 250 SC" style="display:none;">
+      <img src="../img/Spider 250 SC.webp" alt="Spider 250 SC" />
+      <h3>Spider 250 SC</h3>
+      <p>$100,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Insecticida con una combinación de dos ingredientes activos: Imidacloprid con propiedades sistémicas y Lambdacihalotrina con propiedades no sistémicas y acción por contacto e ingestión.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     
+
+         <div class="producto" data-nombre="Invesamina 720/867 SL" style="display:none;">
+      <img src="../img/Invesamina 720 867 SL.webp" alt="Invesamina 720/867 SL" />
+      <h3>Invesamina 720/867 SL</h3>
+      <p>$21,000.00</p>
+      <p class="descripcion" style="display:none;">
+      Herbicida de acción sistémica, controla malezas herbáceas de hoja ancha.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+
+    
+
+    
+  </div>
+  <div id="vistaRapidaModal">
+    <div class="modal-content">
+      <span id="cerrarModal">&times;</span>
+      <img id="modalImagen" src="" alt="" />
+      <h3 id="modalTitulo"></h3>
+      <p id="modalPrecio"></p>
+      <p class="descripcion" id="modalDescripcion"></p>
+      <button id="modalComprarBtn" style="width:100%; padding:10px; background-color:#0a3e12; color:white; border:none; border-radius:4px; font-weight:bold;">Comprar ahora</button>
+    </div>
+  </div>
+  <div id="carritoLateral">
+    <button id="cerrarCarritoBtn">Cerrar carrito</button>
+    <h3>Tu carrito</h3>
+    <div id="carritoLista"></div>
+    <button id="comprarTodoBtn">Comprar todo</button>
+  </div>
+  <script src="../scripts/productosJs/nutricion.js"></script>
+</body>
+</html>

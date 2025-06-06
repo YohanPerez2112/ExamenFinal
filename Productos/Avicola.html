@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="../styles/css productos/Avicola.css">
+
+<style>
+ 
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" />
+    </div>
+    <nav>
+      <div class="menu-hamburguesa" id="menuHamburguesa">&#9776;</div>
+      <ul id="menuPrincipal">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        <li><a id="abrirCarrito" href="javascript:void(0)">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="fondoMenuMovil"></div>
+  <div class="subnav">
+    <a href="../Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="../Productos/Avicola.html">Avícola</a>
+    <a href="../Productos/Herrramientas.html">Herramientas</a>
+    <a href="../Productos/Riego.html">Riego</a>
+    <a href="../Productos/Cercas.html">Cercas</a>
+    <a href="../Productos/Jardineria.html">Jardinería</a>
+    <a href="../Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="tienda-header">
+    <div>
+      <h2>Avicola</h2>
+     
+    </div>
+   
+    
+    <div style="margin-left:20px; display: flex; align-items: center; max-width: 270px; position: relative;">
+      <input
+        type="text"
+        id="busquedaProducto"
+        placeholder="Buscar producto..."
+        style="padding:8px 36px 8px 12px; border-radius:6px; border:1px solid #ccc; font-size:16px; width: 100%;"
+      >
+      <span style="position:absolute; right:10px; top:50%; transform:translateY(-50%); pointer-events:none; color:#888;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div class="productos-grid" id="productosGrid">
+    <div class="producto" data-nombre="Nidales">
+      <img src="../img/Nidales.webp" alt="Nidales" />
+      <h3>Nidales</h3>
+      <p>$301,200.00</p>
+      <p class="descripcion" style="display:none;">
+        Nidales para aves  Ingeniería Avícola Alfonso SAS
+        Optimiza la producción de huevos con nuestros nidales de alta calidad, diseñados para adaptarse tanto a galpones tecnificados como tradicionales. Fabricados con materiales duraderos y funcionales, nuestros nidales ofrecen un ambiente cómodo y seguro para la postura, ayudando a:
+        Reducir el pisoteo y la rotura de huevos
+        Disminuir el estrés en las aves
+        Mejorar la eficiencia en la recolección
+        Garantizar una postura más limpia y ordenada
+        Variaciones disponibles según tu necesidad:
+        Nidal de 36 puestos
+        Nidal de 32 puestos
+        Nido de 24 puestos
+        Medio nido de 18-16 puestos
+        Medio nido de 10 puestos
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Bebedero automatico">
+      <img src="../img/Bebedero automático.webp" alt="Bebedero automatico" />
+      <h3>Bebedero automático</h3>
+      <p>$45,500.00</p>
+      <p class="descripcion" style="display:none;">
+       Mantén a tus aves siempre bien hidratadas con este práctico bebedero automático, diseñado para brindar un suministro continuo de agua fresca y limpia. Su válvula de acción automática se activa con el leve contacto del pico del ave, evitando desperdicios y garantizando un consumo eficiente.
+       Perfecto para gallinas, codornices, pollos, patos y otras aves de corral, este sistema minimiza el trabajo manual y asegura el bienestar de tus animales.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Bebedero 1,5 gal">
+      <img src="../img/Bebedero 1,5 gal.webp" alt="Bebedero 1,5 gal" />
+      <h3>Bebedero 1,5 gal</h3>
+      <p>$11,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Bebedero diseñado especialmente para gallinas, pollitos y otras aves de corral, con una capacidad de 1,5 galones (aprox. 5,7 litros). Fabricado en plástico resistente y apto para uso en exteriores, este bebedero mantiene el agua limpia y accesible gracias a su sistema de gravedad, que repone el nivel a medida que las aves beben. Ideal para pequeños corrales o criaderos, su base antideslizante y su estructura fácil de llenar y limpiar lo hacen una opción práctica y eficiente para mantener a tus aves bien hidratadas.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Bebedero pollito 2 gal" style="display:none;">
+      <img src="../img/Bebedero pollito 2 gal.webp" alt="Bebedero pollito 2 gal" />
+      <h3>Bebedero pollito 2 gal</h3>
+      <p>$18,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Cuida a tus pollitos con el mejor aliado en su etapa más delicada. Este bebedero de 2 galones (aproximadamente 7,5 litros) está diseñado específicamente para facilitar el acceso al agua a aves pequeñas, reduciendo al mínimo el riesgo de ahogamiento. Su estructura segura y de fácil uso garantiza una hidratación constante y segura, acompañando a tus pollitos en su crecimiento saludable desde el primer día
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Bebedero pollito 7 L" style="display:none;">
+      <img src="../img/Bebedero pollito 7 L.webp" alt="Bebedero pollito 7 L" />
+      <h3>Bebedero pollito 7 L</h3>
+      <p>$20,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Este práctico bebedero de 7 litros está diseñado para brindar agua limpia y constante a tus pollitos durante sus primeras etapas de crecimiento. Su tamaño es ideal para evitar recargas frecuentes, y su diseño ergonómico ayuda a prevenir derrames y desperdicio de agua. Fabricado en materiales resistentes y fáciles de limpiar, es una opción confiable para mantener una correcta hidratación en criaderos o galpones.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero de 7 kg" style="display:none;">
+      <img src="../img/Comedero de 7 kg.webp" alt="Comedero de 7 kg" />
+      <h3>Comedero de 7 kg</h3>
+      <p>$16,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Maximiza el tiempo y minimiza el desperdicio con este comedero de 12 kg de capacidad, ideal para productores avícolas que priorizan la eficiencia y el rendimiento. Su diseño robusto y funcional permite almacenar una mayor cantidad de alimento, asegurando un suministro continuo por más tiempo y reduciendo la frecuencia de recarga. Fabricado con materiales duraderos, es perfecto para galpones tecnificados o tradicionales, ayudando a mantener el alimento limpio y accesible para tus aves.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero 12 Kg" style="display:none;">
+      <img src="../img/Comedero 12 Kg.webp" alt="Comedero 12 Kg" />
+      <h3>Comedero 12 Kg"</h3>
+      <p>$22,700.00</p>
+      <p class="descripcion" style="display:none;">
+        Maximiza tu tiempo y minimiza el desperdicio con este comedero de 12 kg, ideal para productores que buscan practicidad, eficiencia y alto rendimiento. Su diseño robusto y funcional permite almacenar una mayor cantidad de alimento, garantizando un suministro continuo y ordenado para tus aves durante más tiempo. Perfecto para sistemas de cría intensiva o tradicionales, este comedero contribuye a una alimentación más limpia, evitando derrames y reduciendo el desperdicio.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero 18 kg" style="display:none;">
+      <img src="../img/Comedero 18 kg.webp" alt="Comedero 18 kg" />
+      <h3>Comedero 18 kg</h3>
+      <p>$25,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Diseñado para granjas de mediana y gran escala, este comedero de 18 kg de capacidad es el aliado perfecto para mantener a tus aves bien alimentadas de forma continua y eficiente. Su gran capacidad reduce la frecuencia de recarga, mientras que su diseño funcional y resistente minimiza el desperdicio de alimento, optimizando tanto el manejo como la inversión. Ideal para galpones tecnificados o tradicionales que buscan rendimiento y practicidad en cada jornada.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero pollitos" style="display:none;">
+      <img src="../img/Comedero pollitos.webp" alt="Comedero pollitos" />
+      <h3>Comedero pollitos</h3>
+      <p>$9,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Especialmente diseñado para las primeras etapas de crecimiento, este comedero ofrece un acceso cómodo y seguro al alimento, cuidando el bienestar de los pollitos desde sus primeros días de vida. Su tamaño compacto, forma ergonómica y materiales resistentes permiten una alimentación limpia, sin desperdicios y fácil de mantener, favoreciendo un entorno higiénico y saludable en criaderos o galpones.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+
+  </div>
+
+  <div id="vistaRapidaModal">
+    <div class="modal-content">
+      <span id="cerrarModal">&times;</span>
+      <img id="modalImagen" src="" alt="" />
+      <h3 id="modalTitulo"></h3>
+      <p id="modalPrecio"></p>
+      <p class="descripcion" id="modalDescripcion"></p>
+      <button id="modalComprarBtn" style="width:100%; padding:10px; background-color:#0a3e12; color:white; border:none; border-radius:4px; font-weight:bold;">Comprar ahora</button>
+    </div>
+  </div>
+
+  <div id="carritoLateral">
+    <button id="cerrarCarritoBtn">Cerrar carrito</button>
+    <h3>Tu carrito</h3>
+    <div id="carritoLista"></div>
+    <button id="comprarTodoBtn">Comprar todo</button>
+  </div>
+  <script src="../scripts/productosJs/avicola.js"></script>
+</body>
+</html>

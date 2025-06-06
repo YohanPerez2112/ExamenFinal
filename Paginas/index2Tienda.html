@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="../styles/css paginas/index2Tienda.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" />
+    </div>
+    <nav>
+      <div class="menu-hamburguesa" id="menuHamburguesa">&#9776;</div>
+      <ul id="menuPrincipal">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        <li><a id="abrirCarrito" href="javascript:void(0)">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="fondoMenuMovil"></div>
+  <div class="subnav">
+    <a href="../Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="../Productos/Avicola.html">Avícola</a>
+    <a href="../Productos/Herrramientas.html">Herramientas</a>
+    <a href="../Productos/Riego.html">Riego</a>
+    <a href="../Productos/Cercas.html">Cercas</a>
+    <a href="../Productos/Jardineria.html">Jardinería</a>
+    <a href="../Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="tienda-header">
+    <div>
+      <h2>Todos los productos</h2>
+     
+    </div>
+   
+    
+    <div style="margin-left:20px; display: flex; align-items: center; max-width: 270px; position: relative;">
+      <input
+        type="text"
+        id="busquedaProducto"
+        placeholder="Buscar producto..."
+        style="padding:8px 36px 8px 12px; border-radius:6px; border:1px solid #ccc; font-size:16px; width: 100%;"
+      >
+      <span style="position:absolute; right:10px; top:50%; transform:translateY(-50%); pointer-events:none; color:#888;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div class="productos-grid" id="productosGrid">
+    <div class="producto" data-nombre="Fumigadora Activa Royal Condor">
+      <img src="../img/Fumigadora Activa Royal Condor.webp" alt="Fumigadora Activa Royal Condor" />
+      <h3>Fumigadora Activa Royal Condor</h3>
+      <p>$265,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La fumigadora Royal Condor® La Activa es la herramienta perfecta para quienes buscan rendimiento, durabilidad y comodidad en aplicaciones agropecuarias. Fabricada con plástico de ingeniería, es liviana pero robusta, ideal para jornadas prolongadas sin fatiga.
+        Gracias a su sistema de presión eficiente (rango de 1 a 13.79 bar / 14.7 a 200 psi), permite alcanzar el nivel óptimo de trabajo con tan solo 10 palancazos por minuto, al usar una boquilla de descarga de 600 cc/minuto. Esto se traduce en ahorro de esfuerzo y mayor cobertura en menos tiempo.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Spider 250 SC">
+      <img src="../img/Spider 250 SC.webp" alt="Spider 250 SC" />
+      <h3>Spider 250 SC</h3>
+      <p>$100,000.00</p>
+      <p class="descripcion" style="display:none;">
+      Insecticida con una combinación de dos ingredientes activos: Imidacloprid con propiedades sistémicas y Lambdacihalotrina con propiedades no sistémicas y acción por contacto e ingestión.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Juego de jardinería x3 de 11">
+      <img src="../img/Juego de jardinería x3 de 11.webp" alt="Juego de jardinería x3 de 11" />
+      <h3>Juego de jardinería x3 de 11"</h3>
+      <p>$15,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Juego de jardinería de 11" , 28 cm 
+       Material polipropileno
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Lienza Truper en Fibra Vidrio 30mts" style="display:none;">
+      <img src="../img/Lienza Truper en Fibra Vidrio 30mts.webp" alt="Lienza Truper en Fibra Vidrio 30mts" />
+      <h3>Lienza Truper en Fibra Vidrio 30mts</h3>
+      <p>$100,000.00</p>
+      <p class="descripcion" style="display:none;">La línea Truper de 30 metros es ideal para medir y marcar terrenos agrícolas. Su fibra de vidrio proporciona resistencia y durabilidad, mientras que su diseño flexible y ligero facilita su transporte y almacenamiento. Una herramienta imprescindible para realizar mediciones precisas en el campo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    <div class="producto" data-nombre="Serrucho Gavilan Curvo Podador 12 M/Plastico" style="display:none;">
+      <img src="../img/Serrucho Gavilan Curvo Podador 12 M Plástico.webp" alt="Serrucho Gavilan Curvo Podador 12 M/Plastico" />
+      <h3>Serrucho Gavilan Curvo Podador 12" M/Plástico</h3>
+      <p>$60,600.00</p>
+      <p class="descripcion" style="display:none;">El serrucho Gavilan curvo de 12 pulgadas es perfecto para podar ramas gruesas de forma rápida y eficiente. Su diseño curvo y el mango de plástico permiten un agarre cómodo y un uso prolongado sin esfuerzo, siendo una herramienta esencial en el cuidado de jardines y huertos.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo" style="display:none;">
+      <img src="../img/Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo.webp" alt="Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo" />
+      <h3>Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo</h3>
+      <p>$253,600.00</p>
+      <p class="descripcion" style="display:none;">La carretilla Econo Colima es ideal para el transporte de materiales en el campo o en el jardín. Con llantas antipinchazo y un diseño resistente, es perfecta para quienes necesitan durabilidad y comodidad en sus trabajos diarios. Su tamaño de 5.5 pies ofrece suficiente capacidad para cargar y transportar herramientas o insumos.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Cortador de Ramas Altas Gavilan sin Mango 14" style="display:none;">
+      <img src="../img/Cortador de Ramas Altas Gavilan sin Mango 14.webp" alt="Cortador de Ramas Altas Gavilan sin Mango 14" />
+      <h3>Cortador de Ramas Altas Gavilan sin Mango 14"</h3>
+      <p>$52,300.00</p>
+      <p class="descripcion" style="display:none;">Este cortador de ramas altas de 14 pulgadas es perfecto para alcanzar ramas que están fuera del alcance normal. Su diseño sin mango permite que se pueda adaptar a diferentes tipos de mangos según las necesidades del usuario, brindando flexibilidad y comodidad al cortar en alturas.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Tijera Gavilan Podadora 500 Pintada 7, 8 y 9" style="display:none;">
+      <img src="../img/Tijera Gavilan Podadora 500 Pintada 7, 8 y 9.webp" alt="Tijera Gavilan Podadora 500 Pintada 7, 8 y 9" />
+      <h3>Tijera Gavilan Podadora 500 Pintada 7", 8" y 9"</h3>
+      <p>$28,200.00</p>
+      <p class="descripcion" style="display:none;">Esta tijera de 7 pulgadas es ideal para podar ramas finas y medianas. Su construcción robusta y el acabado pintado proporcionan un buen agarre y resistencia al desgaste. Una herramienta perfecta para el cuidado de plantas y árboles de forma precisa.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Tijera Podadora Incolma Níquelada Tradicional 9" style="display:none;">
+      <img src="../img/Tijera Podadora Incolma Níquelada Tradicional 9.webp" alt="Tijera Podadora Incolma Níquelada Tradicional 9" />
+      <h3>Tijera Podadora Incolma Níquelada Tradicional 9"</h3>
+      <p>$39,000.00</p>
+      <p class="descripcion" style="display:none;">Con esta tijera podadora de 9 pulgadas, podrás realizar cortes precisos y eficaces en plantas, arbustos y árboles frutales. Su diseño tradicional y niquelado la hace resistente a la corrosión, asegurando una larga vida útil, perfecta para el jardinero o agricultor que busca calidad y durabilidad.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Machete Aguila Corneta Niquel" style="display:none;">
+      <img src="../img/Machete Águila Corneta Níquel.webp" alt="Machete Águila Corneta Niquel" />
+      <h3>Machete Aguila Corneta Niquel</h3>
+      <p>$23,400.00</p>
+      <p class="descripcion" style="display:none;">Este machete de alta calidad, fabricado con acero inoxidable y recubierto en níquel, es ideal para trabajos de corte en terrenos agrícolas. Con una longitud de hoja que varía de 14” a 24”, su diseño robusto y duradero lo convierte en una herramienta esencial para labores de poda, desbroce y corte de ramas gruesas.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Machete Aguila Corneta Barr 14 a 22" style="display:none;">
+      <img src="../img/Machete Águila Corneta Barr 14 a 22.webp" alt="Machete Águila Corneta Barr 14 a 22" />
+      <h3>Machete Aguila Corneta Barr 14” a 22"</h3>
+      <p>$19,000.00</p>
+      <p class="descripcion" style="display:none;">Modelo con hoja más ancha y reforzada (barrigón), ideal para corte de materiales más gruesos como tallos fibrosos, ramas duras o cultivos como plátano y yuca.
+        Uso recomendado: Limpieza pesada y apertura de caminos.
+        Beneficio: Corta con menor esfuerzo gracias a su diseño curvo</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Machete Aguila Corneta Pulido 14 a 22" style="display:none;">
+      <img src="../img/Machete Aguila Corneta Pulido 14 a 22.webp" alt="Machete Aguila Corneta Pulido 14 a 22" />
+      <h3>Machete Aguila Corneta Pulido 14” a 22”</h3>
+      <p>$19,000.00</p>
+      <p class="descripcion" style="display:none;">Machete tradicional de uso agropecuario con hoja pulida de acero templado. Disponible en tamaños de 14 a 22 pulgadas para adaptarse a distintas tareas: corte de caña, maleza, ramas o limpieza de terreno.
+      Ventaja: Equilibrio entre filo y peso, ideal para uso diario Marca reconocida por su durabilidad.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Gurbia Gavilan" style="display:none;">
+      <img src="../img/Gurbia Gavilan.webp" alt="Gurbia Gavilan" />
+      <h3>Gurbia Gavilan</h3>
+      <p>$7,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta especializada para labores de desmane en cultivos frutales, permitiendo cortar brotes no deseados de forma precisa. Su tamaño de 4” brinda un manejo cómodo y ágil.
+        Beneficio: Promueve el crecimiento saludable de los cultivos.
+        Color llamativo para fácil localización en campo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Pala Cuadrada Cargadora Colima" style="display:none;">
+      <img src="../img/Pala Cuadrada Cargadora Colima.webp" alt="Pala Cuadrada Cargadora Colima" />
+      <h3>Pala Cuadrada Cargadora Colima</h3>
+      <p>$22,800.00</p>
+      <p class="descripcion" style="display:none;">🛠️ Pala Cuadrada Cargadora #2 – Ref. 68950401 (S.C. Colima)
+      Pala de hoja cuadrada robusta, perfecta para cargar, nivelar y remover materiales sueltos como tierra, estiércol, arena o compost. Su tamaño #2 la hace más ligera, ideal para tareas domésticas o semiprofesionales.
+      Aplicación: Establos, cultivos, viveros y zonas residenciales rurales.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Pala Collins Redonda Estadar sin mango" style="display:none;">
+      <img src="../img/Pala Collins Redonda Estándar sin mango.webp" alt="Pala Collins Redonda Estandar sin mango" />
+      <h3>Pala Collins Redonda Estandar sin mango</h3>
+      <p>$15,800.00</p>
+      <p class="descripcion" style="display:none;">Pala Collins Redonda Estándar N° 2 Sin Mango: Cabezal de pala redonda para tareas de carga ligera y excavación en terrenos suaves o moderadamente compactos. Fabricada en acero de alta calidad, lista para adaptarse a mangos de madera o metálicos.
+       Uso recomendado: Agricultura, jardinería y trabajos de campo.
+       Beneficio: Ligera y fácil de manipular para jornadas prolongadas</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Paladraga Colima Cabo Metalico" style="display:none;">
+      <img src="../img/Paladraga Colima Cabo Metálico.webp" alt="Paladraga Colima Cabo Metalico" />
+      <h3>Paladraga Colima Cabo Metalico</h3>
+      <p>$72,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta robusta para trabajos de excavación, limpieza y remoción de material duro como raíces, piedras o tierra compacta. Su cabo metálico le brinda mayor durabilidad y resistencia al desgaste, ideal para uso rudo y continuo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Paladraga Colima 48" style="display:none;">
+      <img src="../img/Paladraga Colima 48.webp" alt="Paladraga Colima 48" />
+      <h3>Paladraga Colima 48</h3>
+      <p>$67,800.00</p>
+      <p class="descripcion" style="display:none;">Herramienta doble propósito para corte y remoción de raíces, tierra dura y materiales pesados. Su hoja ancha en un extremo y punta afilada en el otro permiten trabajar con eficiencia en limpieza de terrenos, excavaciones y mantenimiento de drenajes.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Hoyador con Mango Metalico" style="display:none;">
+      <img src="../img/Palín Hoyador con Mango Metálico.webp" alt="Palin Hoyador con Mango Metalico" />
+      <h3>Palin Hoyador con Mango Metalico</h3>
+      <p>$100,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta lista para usar, con mango metálico integrado, ideal para trabajos continuos y exigentes. Su estructura ofrece un agarre firme y resistente, especialmente útil en terrenos duros o con presencia de piedras.
+       Beneficio: Mayor durabilidad y menor mantenimiento que los mangos de madera..</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Collins Hoyador Sin Mango" style="display:none;">
+      <img src="../img/Palín Collins Hoyador Sin Mango.webp" alt="Palin Collins Hoyador Sin Mango" />
+      <h3>Palin Collins Hoyador Sin Mango</h3>
+      <p>$40,400.00</p>
+      <p class="descripcion" style="display:none;">Cabezal de palín fabricado en acero de alta resistencia, ideal para tareas de hoyado profundo en cultivos forestales, ornamentales y frutales. Su diseño sin mango permite al usuario elegir el tipo de empuñadura más adecuada según el terreno o la tarea.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Hoyador Herragro CAL 16" style="display:none;">
+      <img src="../img/Palín Hoyador Herragro CAL 16.webp" alt="Palin Hoyador Herragro CAL 16" />
+      <h3>Palin Hoyador Herragro CAL 16</h3>
+      <p>$16,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta resistente fabricada en acero al carbono de alta calidad, templado para máxima durabilidad. Ideal para abrir hoyos profundos en suelos compactos, rocosos o arcillosos. Su diseño permite trabajar de forma rápida y eficaz en la instalación de postes, siembra de plántulas o colocación de tutores.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Desmachador Herragro" style="display:none;">
+      <img src="../img/Palin Desmachador Herragro.webp" alt="Palin Desmachador Herragro" />
+      <h3>Palin Desmachador Herragro</h3>
+      <p>$27,000.00</p>
+      <p class="descripcion" style="display:none;">Especialmente diseñado para eliminar malezas y raíces superficiales en cultivos y áreas verdes. Su hoja amplia permite cortes limpios y precisos, y su peso balanceado mejora el control del usuario. Ideal para trabajos de mantenimiento en cultivos establecidos o preparación del terreno.
+       Beneficio clave: Reduce el uso de herbicidas químicos.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Hoyador Herragro CAL 13" style="display:none;">
+      <img src="../img/Palin Hoyador Herragro CAL 13.webp" alt="Palin Hoyador Herragro CAL 13" />
+      <h3>Palin Hoyador Herragro CAL 13</h3>
+      <p>$30,300.00</p>
+      <p class="descripcion" style="display:none;">Herramienta resistente fabricada en acero al carbono de alta calidad, templado para máxima durabilidad. Ideal para abrir hoyos profundos en suelos compactos, rocosos o arcillosos. Su diseño permite trabajar de forma rápida y eficaz en la instalación de postes, siembra de plántulas o colocación de tutores</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Recolector Truper de Frutas Sin Mango" style="display:none;">
+      <img src="../img/Recolector Truper de Frutas – Sin Mango.webp" alt="Recolector Truper de Frutas Sin Mango" />
+      <h3>Recolector Truper de Frutas Sin Mango</h3>
+      <p>$41,200.00</p>
+      <p class="descripcion" style="display:none;">Cabezal recolector versátil para frutas como mangos, aguacates, limones, naranjas, entre otros. Su diseño de canastilla metálica con bordes suaves permite cortar el tallo sin dañar el fruto, lo que conserva su calidad postcosecha. Se adapta fácilmente a mangos telescópicos o de madera.
+       Ideal para cultivos frutales en altura.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa)" style="display:none;">
+      <img src="../img/Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa).webp" alt="Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa)" />
+      <h3>Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa)</h3>
+      <p>$23,700.00</p>
+      <p class="descripcion" style="display:none;">Diseñada especialmente para las jornadas intensas de recolección, esta canasta de alta capacidad (18 kg) es ideal para cultivos de café, cacao y frutos similares. Su color amarillo facilita la visibilidad en campo y mejora la seguridad del operario.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Guantes de carnaza" style="display:none;">
+      <img src="../img/Guantes de carnaza.webp" alt="Guantes de carnaza" />
+      <h3>Guantes de carnaza</h3>
+      <p>$9,500.00</p>
+      <p class="descripcion" style="display:none;">Los guantes de carnaza cortos son ideales para trabajos exigentes en entornos agrícolas, industriales y de construcción. Fabricados en cuero resistente, ofrecen alta durabilidad, protección contra abrasión, calor moderado y objetos punzantes, sin sacrificar la comodidad y la movilidad de la mano.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+
+  
+
+    <div class="producto" data-nombre="Regadera 4 L" style="display:none;">
+      <img src="../img/Regadera 4 L.webp" alt="Regadera 4 L" />
+      <h3>Regadera 4 L</h3>
+      <p>$15,600.00</p>
+      <p class="descripcion" style="display:none;">
+        Regadera plastica de 4 litros
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Regadera de 8 L" style="display:none;">
+      <img src="../img/Regadera de 8 L.webp" alt="Regadera de 8 L" />
+      <h3>Regadera de 8 L</h3>
+      <p>$18,250.00</p>
+      <p class="descripcion" style="display:none;">
+        Regadera de jardín con 8 litros de capacidad material plástico
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Semilla Maní forrajero 1 Lb" style="display:none;">
+      <img src="../img/Semilla Maní forrajero 1 Lb.webp" alt="Semilla Maní forrajero 1 Lb" />
+      <h3>Semilla Maní forrajero 1 Lb</h3>
+      <p>$70,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El maní forrajero es una leguminosa rastrera perenne, altamente valorada en sistemas 
+        agropecuarios por su alto contenido proteico, su capacidad para fijar nitrógeno atmosférico y 
+        su uso como cobertura vegetal viva.Es ideal para mejorar suelos, alimentación animal y control de erosión.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Semilla Salvia 1 gr" style="display:none;">
+      <img src="../img/Semilla Salvia 1 gr.webp" alt="Semilla Salvia 1 gr"/>
+      <h3>Semilla Salvia 1 gr</h3>
+      <p>$2,800.00</p>
+      <p class="descripcion" style="display:none;">
+       Aromática de sabor fuerte. Ideal para carnes, aceites y uso medicinal. Planta perenne y resistente.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Semilla Valeriana 1 gr" style="display:none;">
+      <img src="../img/Semilla Valeriana 1 gr.webp" alt="Semilla Valeriana 1 gr" />
+      <h3>Semilla Valeriana 1 gr</h3>
+      <p>$5,200.00</p>
+      <p class="descripcion" style="display:none;">
+        Calmante natural. Sus raíces se usan para tratar el insomnio y la ansiedad. Planta de crecimiento lento.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Semilla Ruda 1 gr" style="display:none;">
+      <img src="../img/Semilla Ruda 1 gr.webp" alt="Semilla Ruda 1 gr" />
+      <h3>Semilla Ruda 1 gr</h3>
+      <p>$2,700.00</p>
+      <p class="descripcion" style="display:none;">
+        Planta medicinal tradicional. Se cultiva por sus propiedades protectoras y curativas.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+         <div class="producto" data-nombre="Semilla Albahaca 1 gr" style="display:none;">
+      <img src="../img/Semilla Albahaca 1 gr.webp" alt="Semilla Albahaca 1 gr" />
+      <h3>Semilla Albahaca 1 gr</h3>
+      <p>$2,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Aromática y deliciosa, ideal para realzar el sabor de tus platillos. Crece rápido y es perfecta para jardines, macetas o huertos urbanos.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+        <div class="producto" data-nombre="Aislador tipo puntilla x 100 und" style="display:none;">
+      <img src="../img/Aislador tipo puntilla x 100 und.webp" alt="Aislador tipo puntilla x 100 und" />
+      <h3>Aislador tipo puntilla x 100 und</h3>
+      <p>$22,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El aislador tipo puntilla es una solución práctica y eficaz para sistemas de cerca eléctrica. Diseñado para una instalación rápida y firme en postes de madera, ofrece un aislamiento confiable que evita fugas de corriente y garantiza el buen funcionamiento del sistema. Su material resistente y su estructura robusta soportan condiciones climáticas adversas, haciéndolo ideal para ganadería, seguridad perimetral y control de animales.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Aislador tipo pera x 25 und" style="display:none;">
+      <img src="../img/Aislador tipo pera x 25 und.webp" alt="Aislador tipo pera x 25 und" />
+      <h3>Aislador tipo pera x 25 und</h3>
+      <p>$24,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El aislador tipo pera es un componente esencial en sistemas de cercas eléctricas, diseñado para brindar un aislamiento seguro, duradero y de alto rendimiento. Su forma tipo pera permite una fijación firme y eficiente del alambre, evitando fugas de corriente y mejorando el funcionamiento del cerramiento. Ideal para aplicaciones en ganadería, seguridad perimetral y control de animales.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Tensor galvanizado x 15 und" style="display:none;">
+      <img src="../img/Tensor galvanizado x 15 und.webp" alt="Tensor galvanizado x 15 und" />
+      <h3>Tensor galvanizado x 15 und</h3>
+      <p>$68,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El tensor galvanizado es el accesorio ideal para ajustar y mantener firmes los cables en cercas eléctricas o tradicionales. Su acabado galvanizado le brinda una excelente resistencia a la corrosión, humedad y desgaste, lo que garantiza una larga vida útil en condiciones de intemperie. Perfecto para lograr una tensión constante y segura, esencial en sistemas de cerramiento ganadero, agrícola o de seguridad.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Llave tensora" style="display:none;">
+      <img src="../img/Llave tensora.webp" alt="Llave tensora" />
+      <h3>Llave tensora</h3>
+      <p>$6,500.00</p>
+      <p class="descripcion" style="display:none;">
+        La llave tensora es una herramienta esencial para el mantenimiento de cercas eléctricas y tradicionales, permitiendo ajustar y tensar el alambre con precisión y seguridad. Su diseño ergonómico ofrece un manejo cómodo y un control total del proceso de tensionado, evitando que el alambre se afloje con el tiempo. Ideal para lograr una cerca firme, segura y duradera en proyectos ganaderos, agrícolas o de seguridad perimetral.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Aislador de varilla x 15 und" style="display:none;">
+      <img src="../img/Aislador de varilla x 15 und.webp" alt="Aislador de varilla x 15 und" />
+      <h3>Tijera Gavilan Podadora 500 Pintada 7", 8" y 9"</h3>
+      <p>$28,600.00</p>
+      <p class="descripcion" style="display:none;">
+        El aislador de varilla es una excelente opción para garantizar un aislamiento resistente y confiable en sistemas de cercas eléctricas. Su diseño permite una instalación sencilla y estable, manteniendo el alambre conductor firme y correctamente aislado del soporte. Ideal para proyectos de ganadería, seguridad perimetral y control de animales, incluso en condiciones exigentes de uso al aire libre.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Kit portillo x 3 M" style="display:none;">
+      <img src="../img/Kit portillo x 3 M.webp" alt="Kit portillo x 3 M" />
+      <h3>Kit portillo x 3 M</h3>
+      <p>$44,800.00</p>
+      <p class="descripcion" style="display:none;">
+        El Kit Portillo de 3 metros es la solución ideal para crear un acceso práctico y seguro en sistemas de cerca eléctrica, tradicional o de seguridad. Incluye todos los componentes necesarios para una instalación rápida y resistente, permitiendo un paso cómodo y confiable tanto para personas como para ganado. Su diseño está pensado para mantener la continuidad del cerramiento eléctrico sin comprometer la funcionalidad del acceso.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Voltimetro de lucesl" style="display:none;">
+      <img src="../img/Voltímetro de luces.webp" alt="Voltimetro de luces" />
+      <h3>Voltímetro de luces</h3>
+      <p>$41,300.00</p>
+      <p class="descripcion" style="display:none;">
+        El voltímetro de luces es una herramienta práctica e indispensable para medir con precisión el voltaje en sistemas de cercas eléctricas. Su diseño compacto, portátil y de fácil uso permite verificar rápidamente el funcionamiento y la eficiencia del sistema, mediante una lectura visual clara por niveles de luz. Ideal para aplicaciones en ganadería, seguridad perimetral y control eléctrico, asegurando un cerramiento confiable y seguro.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Varilla Cooperweld" style="display:none;">
+      <img src="../img/Varilla Cooperweld.webp" alt="Varilla Cooperweld" />
+      <h3>Varilla Cooperweld</h3>
+      <p>$38,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La varilla Cooperweld es un consumible de alta calidad, especialmente formulado para lograr soldaduras resistentes, limpias y de gran durabilidad. Gracias a su excelente conductividad eléctrica y resistencia a la corrosión, es ideal para aplicaciones en cercas eléctricas, estructuras metálicas y proyectos de soldadura industrial. Su desempeño garantiza una unión segura y estable, contribuyendo a la eficiencia y seguridad de tus instalaciones.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Grapa para varilla" style="display:none;">
+      <img src="../img/Grapa para varilla.webp" alt="Grapa para varilla" />
+      <h3>Grapa para varilla</h3>
+      <p>$8,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La grapa para varilla de tierra es un componente esencial para lograr una conexión firme, segura y de alta conductividad eléctrica entre las varillas de tierra y el sistema de puesta a tierra. Fabricada con materiales resistentes a la corrosión, está diseñada para garantizar una puesta a tierra confiable en instalaciones eléctricas, sistemas de seguridad y cercas eléctricas. Su instalación sencilla y eficaz la hace ideal para entornos residenciales, industriales o agrícolas.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Manigueta portillo" style="display:none;">
+      <img src="../img/Manigueta portillo.webp" alt="Manigueta portillo" />
+      <h3>Manigueta portillon</h3>
+      <p>$8,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La manigueta portillo es un componente indispensable para facilitar la apertura y cierre de portillos en sistemas de cercas eléctricas o tradicionales. Su diseño ergonómico, robusto y resistente garantiza un uso cómodo y seguro, incluso en condiciones exigentes. Ideal para proyectos agropecuarios, de ganadería o seguridad perimetral, proporciona un paso controlado y confiable, preservando la integridad del sistema de cerramiento.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Impulso cerca eléctrica 110Va" style="display:none;">
+      <img src="../img/Impulso cerca eléctrica 110V.webp" alt="Impulso cerca eléctrica 110V" />
+      <h3>Impulso cerca eléctrica 110V</h3>
+      <p>$390,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Impulsor de Cerca Eléctrica 110V – Marca Fonterra
+        Protege tu finca con potencia y confianza gracias al Impulsor de Cerca Eléctrica Fonterra 110V. Esta herramienta es ideal para mantener el control efectivo sobre tu propiedad, ganado o cultivos, ofreciendo un cerramiento seguro, eficiente y de alto rendimiento.
+        Disponible en modelos con capacidades que cubren desde 30 hasta 300 km, se adapta perfectamente a todo tipo de necesidades, desde predios pequeños hasta grandes extensiones rurales, garantizando una energía constante y confiable en tu sistema de cerca eléctrica.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Impulsor cerca eléctrica 12V" style="display:none;">
+      <img src="../img/Impulsor cerca eléctrica 12V.webp" alt="Impulsor cerca eléctrica 12V" />
+      <h3>Impulsor cerca eléctrica 12V</h3>
+      <p>$442,200.00</p>
+      <p class="descripcion" style="display:none;">
+        Impulsor de Cerca Eléctrica 12V – Marca Fonterra
+       🔋 Robusto, confiable y eficiente, el Impulsor de Cerca Eléctrica Fonterra 12V es la solución ideal para mantener el control y la seguridad de tu predio, finca o potrero. Diseñado para funcionar con batería, es perfecto para zonas rurales donde el acceso a la red eléctrica es limitado o inexistente.
+        Disponible en diversos alcances — desde 15 km hasta 300 km — se adapta a cualquier sistema de cerramiento, abarcando desde pequeños lotes hasta grandes extensiones ganaderas, garantizando un suministro constante y eficiente de energía para tu cerca eléctrica.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de púa CL 14" style="display:none;">
+      <img src="../img/Alambre de púa CL 14.webp" alt="Alambre de púa CL 14" />
+      <h3>Alambre de púa CL 14</h3>
+      <p>$108,900.00</p>
+      <p class="descripcion" style="display:none;">
+        El alambre de púas calibre 14 ofrece el equilibrio ideal entre seguridad, durabilidad y facilidad de instalación. Perfecto para cercados agropecuarios, fincas, potreros y perímetros rurales que requieren una protección confiable.
+        Fabricado en acero galvanizado, resiste eficazmente las inclemencias del clima y la corrosión, garantizando una vida útil prolongada. Sus púas uniformes proporcionan una barrera efectiva y disuasiva, asegurando la integridad de tu terreno sin complicaciones.
+        💪 Protección firme, instalación sencilla y rendimiento garantizado. ¡Asegura tu propiedad con la mejor calidad!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de púa CL 14.5" style="display:none;">
+      <img src="../img/Alambre de púa CL 14.5.webp" alt="Alambre de púa CL 14.5" />
+      <h3>Alambre de púa CL 14.5</h3>
+      <p>$77,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El alambre de púas calibre 14.5 es ideal para cercas livianas que requieren efectividad y facilidad de manejo. Perfecto para dividir potreros, proteger cultivos o controlar el paso de animales, ofrece una solución práctica sin sacrificar resistencia.
+        Fabricado en acero galvanizado, garantiza una alta durabilidad contra la intemperie y corrosión, asegurando seguridad y rendimiento a largo plazo. Sus púas estratégicamente distribuidas proporcionan una barrera disuasiva eficaz sin la necesidad de estructuras pesadas.
+        🌿 Una opción versátil y confiable para proteger tu terreno con simplicidad y eficacia. ¡Deja que tu cerca trabaje por ti!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de púa CL 12.5" style="display:none;">
+      <img src="../img/Alambre de púa CL 12.5.webp" alt="Alambre de púa CL 12.5" />
+      <h3>Alambre de púa CL 12.5</h3>
+      <p>$194,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El alambre de púas calibre 12.5 ofrece una protección robusta y confiable, ideal para cercas ganaderas, agrícolas e industriales que requieren una barrera firme y duradera. Fabricado en acero galvanizado, resiste las condiciones más exigentes sin oxidarse ni deteriorarse, garantizando una larga vida útil.
+        Su diseño con púas firmemente entrelazadas proporciona una defensa efectiva contra el ingreso de animales o personas no autorizadas, protegiendo lo que más valoras: tu trabajo, tus cultivos y tu tranquilidad.
+        🌾 Seguridad reforzada para quienes dan todo por su tierra. ¡Convierte tu cerca en una verdadera inversión!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de pua CL 16,5" style="display:none;">
+      <img src="../img/Alambre de pua CL 16,5.webp" alt="Alambre de pua CL 16,5" />
+      <h3>Alambre de pua CL 16,5</h3>
+      <p>$87,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Ideal para proteger cultivos, delimitar terrenos y asegurar zonas rurales o agrícolas, el alambre de púas calibre 16.5 está fabricado en acero galvanizado, ofreciendo una excelente resistencia a la corrosión y alta durabilidad en exteriores. Su estructura firme disuade eficazmente el ingreso de animales o intrusos.
+        El diseño con púas dobles retorcidas facilita una instalación segura y efectiva, adaptándose a diferentes tipos de cercados. Es una solución práctica, económica y confiable para proteger lo que has construido con esfuerzo.
+        🌱 Seguridad para tu finca, tranquilidad para ti. ¡Asegura cada metro de tu terreno con calidad!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Fumigadora Aliada Royal Condor" style="display:none;">
+      <img src="../img/Fumigadora Aliada Royal Condor.webp" alt="Fumigadora Aliada Royal Condor" />
+      <h3>Fumigadora Aliada Royal Condor</h3>
+      <p>$325,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La RoyalCondor® La Aliada es una fumigadora de alta gama, diseñada para brindar durabilidad, comodidad y rendimiento en aplicaciones intensivas. Su chasis ergonómico mejora la comodidad durante largas jornadas, mientras que su bomba y lanza en latón aseguran una larga vida útil, incluso en condiciones exigentes.
+        Con un rango de presión de 1 a 13.79 bar (14.7 200 psi), se adapta perfectamente a diferentes tipos de cultivos y tratamientos. Su eficiencia permite alcanzar la presión de trabajo con solo 10 palancazos por minuto usando una boquilla de 600 cc/minuto.  
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Fumigadora Clasica Royal Condora" style="display:none;">
+      <img src="../img/Fumigadora Clásica Royal Condor.webp" alt="Fumigadora Clasica Royal Condor" />
+      <h3>Fumigadora Clásica Royal Condor</h3>
+      <p>$415,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La RoyalCondor® La Clásica es la primera fumigadora desarrollada por la marca y sigue siendo la preferida por los agricultores gracias a su durabilidad, versatilidad y excelente relación costo-beneficio. Diseñada para uso profesional y trabajos exigentes, es ideal para diversas aplicaciones en el sector agropecuario.
+        Construida con materiales de alta calidad y un diseño probado a lo largo del tiempo, esta fumigadora garantiza rendimiento confiable y larga vida útil, incluso en las condiciones más demandantes.
+        🔧 Desempeño eficiente:
+        10 palancazos/minuto con boquilla de 600 cc/min
+        4 palancazos/minuto con boquilla de 250 cc/min
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Bebedero pollito 2 gal" style="display:none;">
+      <img src="../img/Bebedero pollito 2 gal.webp" alt="Bebedero pollito 2 gal" />
+      <h3>Bebedero pollito 2 gal</h3>
+      <p>$18,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Cuida a tus pollitos con el mejor aliado en su etapa más delicada. Este bebedero de 2 galones (aproximadamente 7,5 litros) está diseñado específicamente para facilitar el acceso al agua a aves pequeñas, reduciendo al mínimo el riesgo de ahogamiento. Su estructura segura y de fácil uso garantiza una hidratación constante y segura, acompañando a tus pollitos en su crecimiento saludable desde el primer día
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Bebedero pollito 7 L" style="display:none;">
+      <img src="../img/Bebedero pollito 7 L.webp" alt="Bebedero pollito 7 L" />
+      <h3>Bebedero pollito 7 L</h3>
+      <p>$20,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Este práctico bebedero de 7 litros está diseñado para brindar agua limpia y constante a tus pollitos durante sus primeras etapas de crecimiento. Su tamaño es ideal para evitar recargas frecuentes, y su diseño ergonómico ayuda a prevenir derrames y desperdicio de agua. Fabricado en materiales resistentes y fáciles de limpiar, es una opción confiable para mantener una correcta hidratación en criaderos o galpones.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero de 7 kg" style="display:none;">
+      <img src="../img/Comedero de 7 kg.webp" alt="Comedero de 7 kg" />
+      <h3>Comedero de 7 kg</h3>
+      <p>$16,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Maximiza el tiempo y minimiza el desperdicio con este comedero de 12 kg de capacidad, ideal para productores avícolas que priorizan la eficiencia y el rendimiento. Su diseño robusto y funcional permite almacenar una mayor cantidad de alimento, asegurando un suministro continuo por más tiempo y reduciendo la frecuencia de recarga. Fabricado con materiales duraderos, es perfecto para galpones tecnificados o tradicionales, ayudando a mantener el alimento limpio y accesible para tus aves.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero 12 Kg" style="display:none;">
+      <img src="../img/Comedero 12 Kg.webp" alt="Comedero 12 Kg" />
+      <h3>Comedero 12 Kg"</h3>
+      <p>$22,700.00</p>
+      <p class="descripcion" style="display:none;">
+        Maximiza tu tiempo y minimiza el desperdicio con este comedero de 12 kg, ideal para productores que buscan practicidad, eficiencia y alto rendimiento. Su diseño robusto y funcional permite almacenar una mayor cantidad de alimento, garantizando un suministro continuo y ordenado para tus aves durante más tiempo. Perfecto para sistemas de cría intensiva o tradicionales, este comedero contribuye a una alimentación más limpia, evitando derrames y reduciendo el desperdicio.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero 18 kg" style="display:none;">
+      <img src="../img/Comedero 18 kg.webp" alt="Comedero 18 kg" />
+      <h3>Comedero 18 kg</h3>
+      <p>$25,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Diseñado para granjas de mediana y gran escala, este comedero de 18 kg de capacidad es el aliado perfecto para mantener a tus aves bien alimentadas de forma continua y eficiente. Su gran capacidad reduce la frecuencia de recarga, mientras que su diseño funcional y resistente minimiza el desperdicio de alimento, optimizando tanto el manejo como la inversión. Ideal para galpones tecnificados o tradicionales que buscan rendimiento y practicidad en cada jornada.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Comedero pollitos" style="display:none;">
+      <img src="../img/Comedero pollitos.webp" alt="Comedero pollitos" />
+      <h3>Comedero pollitos</h3>
+      <p>$9,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Especialmente diseñado para las primeras etapas de crecimiento, este comedero ofrece un acceso cómodo y seguro al alimento, cuidando el bienestar de los pollitos desde sus primeros días de vida. Su tamaño compacto, forma ergonómica y materiales resistentes permiten una alimentación limpia, sin desperdicios y fácil de mantener, favoreciendo un entorno higiénico y saludable en criaderos o galpones.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Panzer 648 SL" style="display:none;">
+      <img src="../img/Panzer 648 SL.webp" alt="Panzer 648 SL" />
+      <h3>Panzer 648 SL</h3>
+      <p>$31,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Herbicida sistémico no selectivo de absorción foliar. Inhibe las enzimas que controlan la síntesis de los aminoácidos aromáticos esenciales. 
+        Penetra por las hojas y se mueve por las partes aéreas y subterráneas de las plantas causando la muerte total de las malezas, después de su 
+        aplicación es inactivo en el suelo.No deja residuos que afecten las siembras posteriores y no penetra por las raíces de cultivos ya establecidos.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Gramafin SL" style="display:none;">
+      <img src="../img/Gramafin SL.webp" alt="Gramafin SL" />
+      <h3>Gramafin SL</h3>
+      <p>$16,800.00</p>
+      <p class="descripcion" style="display:none;">
+        Herbicida no selectivo, no sistémico el cual actúa por contacto. Controla una amplia gama de malezas en diferentes cultivos.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Destierro 280 SL" style="display:none;">
+      <img src="../img/Destierro 280 SL.webp" alt="Destierro 280 SL" />
+      <h3>Destierro 280 SL</h3>
+      <p>$70,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Herbicida que tiene como ingrediente activo glufosinato en forma de sal amonio.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Destierro 200 SL 1L" style="display:none;">
+      <img src="../img/Destierro 200 SL 1L.webp" alt="Destierro 200 SL 1L"/>
+      <h3>Destierro 200 SL 1L</h3>
+      <p>$26,000.00</p>
+      <p class="descripcion" style="display:none;">
+       Herbicida no selectivo, de contacto (con algún tipo de acción sistémica), de amplio espectro, que en ocasiones es utilizado para desecar material
+       vegetal de cultivos antes de la cosecha. Su aplicación conduce a la reducción de la glutamina y al aumento de los niveles de amoníaco en los tejidos 
+       vegetales, deteniendo el proceso de fotosíntesis y produciendo la muerte de la planta en pocos días.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+       <div class="producto" data-nombre="Partner 50 WP 22 gr" style="display:none;">
+      <img src="../img/Partner 50 WP 22 gr.webp" alt="Partner 50 WP 22 gr" />
+      <h3>Partner 50 WP 22 gr</h3>
+      <p>$5,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Herbicida para ser mezclado con agua y aplicado en aspersión directa sobre el follaje, para el control selectivo de malezas de hoja ancha.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     
+
+         <div class="producto" data-nombre="Invesamina 720/867 SL" style="display:none;">
+      <img src="../img/Invesamina 720 867 SL.webp" alt="Invesamina 720/867 SL" />
+      <h3>Invesamina 720/867 SL</h3>
+      <p>$21,000.00</p>
+      <p class="descripcion" style="display:none;">
+      Herbicida de acción sistémica, controla malezas herbáceas de hoja ancha.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+  </div>
+
+  <div id="vistaRapidaModal">
+    <div class="modal-content">
+      <span id="cerrarModal">&times;</span>
+      <img id="modalImagen" src="" alt="" />
+      <h3 id="modalTitulo"></h3>
+      <p id="modalPrecio"></p>
+      <p class="descripcion" id="modalDescripcion"></p>
+      <button id="modalComprarBtn" style="width:100%; padding:10px; background-color:#0a3e12; color:white; border:none; border-radius:4px; font-weight:bold;">Comprar ahora</button>
+    </div>
+  </div>
+
+  <div id="carritoLateral">
+    <button id="cerrarCarritoBtn">Cerrar carrito</button>
+    <h3>Tu carrito</h3>
+    <div id="carritoLista"></div>
+    <button id="comprarTodoBtn">Comprar todo</button>
+  </div>
+  <script src="../scripts/paginasJS/tienda.js"></script>
+</body>
+</html>

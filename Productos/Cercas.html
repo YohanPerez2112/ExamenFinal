@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="../styles/css productos/Cercas.css">
+<style>
+ 
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" />
+    </div>
+    <nav>
+      <div class="menu-hamburguesa" id="menuHamburguesa">&#9776;</div>
+      <ul id="menuPrincipal">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        <li><a id="abrirCarrito" href="javascript:void(0)">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="fondoMenuMovil"></div>
+  <div class="subnav">
+    <a href="../Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="../Productos/Avicola.html">Avícola</a>
+    <a href="../Productos/Herrramientas.html">Herramientas</a>
+    <a href="../Productos/Riego.html">Riego</a>
+    <a href="../Productos/Cercas.html">Cercas</a>
+    <a href="../Productos/Jardineria.html">Jardinería</a>
+    <a href="../Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="tienda-header">
+    <div>
+      <h2>Cercas</h2>
+
+    </div>
+    
+
+    <div style="margin-left:20px; display: flex; align-items: center; max-width: 270px; position: relative;">
+      <input
+        type="text"
+        id="busquedaProducto"
+        placeholder="Buscar producto..."
+        style="padding:8px 36px 8px 12px; border-radius:6px; border:1px solid #ccc; font-size:16px; width: 100%;"
+      >
+      <span style="position:absolute; right:10px; top:50%; transform:translateY(-50%); pointer-events:none; color:#888;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="productos-grid" id="productosGrid">
+
+    <div class="producto" data-nombre="Guantes de carnaza">
+      <img src="../img/Guantes de carnaza.webp" alt="Guantes de carnaza" />
+      <h3>Guantes de carnaza</h3>
+      <p>$9,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Diseñados para trabajos exigentes en sectores agrícolas, industriales y de construcción, estos guantes cortos están fabricados en cuero carnaza resistente que ofrece una alta durabilidad y protección. Son ideales para proteger las manos contra abrasiones, calor moderado y objetos punzantes, sin sacrificar la comodidad ni la movilidad necesaria para un trabajo eficiente y seguro.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Cuchilla doble tiro">
+      <img src="../img/Cuchilla doble tiro.webp" alt="Cuchilla doble tiro" />
+      <h3>Cuchilla doble tiro</h3>
+      <p>$24,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La Cuchilla Doble Tiro es el accesorio perfecto para controlar y seccionar el paso de corriente en tu sistema de cerca eléctrica. Su diseño práctico y resistente permite abrir o cerrar el circuito de forma manual, rápida y segura, brindándote un control eficiente y mayor seguridad en la operación de tu cerca.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Manguera aisladora">
+      <img src="../img/Manguera aisladora.webp" alt="Manguera aisladora" />
+      <h3>Manguera aisladora</h3>
+      <p>$26,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Optimiza la seguridad y la durabilidad de tu sistema de cerca eléctrica con nuestra manguera aisladora de alta calidad. Diseñada para recubrir y proteger el alambre conductor, esta manguera previene pérdidas de corriente y contactos indeseados, asegurando un cerramiento eficiente, seguro y de larga duración. Disponible en versiones lisa y estriada para adaptarse a tus necesidades específicas.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Aislador tipo puntilla x 100 und" style="display:none;">
+      <img src="../img/Aislador tipo puntilla x 100 und.webp" alt="Aislador tipo puntilla x 100 und" />
+      <h3>Aislador tipo puntilla x 100 und</h3>
+      <p>$22,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El aislador tipo puntilla es una solución práctica y eficaz para sistemas de cerca eléctrica. Diseñado para una instalación rápida y firme en postes de madera, ofrece un aislamiento confiable que evita fugas de corriente y garantiza el buen funcionamiento del sistema. Su material resistente y su estructura robusta soportan condiciones climáticas adversas, haciéndolo ideal para ganadería, seguridad perimetral y control de animales.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Aislador tipo pera x 25 und" style="display:none;">
+      <img src="../img/Aislador tipo pera x 25 und.webp" alt="Aislador tipo pera x 25 und" />
+      <h3>Aislador tipo pera x 25 und</h3>
+      <p>$24,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El aislador tipo pera es un componente esencial en sistemas de cercas eléctricas, diseñado para brindar un aislamiento seguro, duradero y de alto rendimiento. Su forma tipo pera permite una fijación firme y eficiente del alambre, evitando fugas de corriente y mejorando el funcionamiento del cerramiento. Ideal para aplicaciones en ganadería, seguridad perimetral y control de animales.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Tensor galvanizado x 15 und" style="display:none;">
+      <img src="../img/Tensor galvanizado x 15 und.webp" alt="Tensor galvanizado x 15 und" />
+      <h3>Tensor galvanizado x 15 und</h3>
+      <p>$68,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El tensor galvanizado es el accesorio ideal para ajustar y mantener firmes los cables en cercas eléctricas o tradicionales. Su acabado galvanizado le brinda una excelente resistencia a la corrosión, humedad y desgaste, lo que garantiza una larga vida útil en condiciones de intemperie. Perfecto para lograr una tensión constante y segura, esencial en sistemas de cerramiento ganadero, agrícola o de seguridad.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Llave tensora" style="display:none;">
+      <img src="../img/Llave tensora.webp" alt="Llave tensora" />
+      <h3>Llave tensora</h3>
+      <p>$6,500.00</p>
+      <p class="descripcion" style="display:none;">
+        La llave tensora es una herramienta esencial para el mantenimiento de cercas eléctricas y tradicionales, permitiendo ajustar y tensar el alambre con precisión y seguridad. Su diseño ergonómico ofrece un manejo cómodo y un control total del proceso de tensionado, evitando que el alambre se afloje con el tiempo. Ideal para lograr una cerca firme, segura y duradera en proyectos ganaderos, agrícolas o de seguridad perimetral.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Aislador de varilla x 15 und" style="display:none;">
+      <img src="../img/Aislador de varilla x 15 und.webp" alt="Aislador de varilla x 15 und" />
+      <h3>Tijera Gavilan Podadora 500 Pintada 7", 8" y 9"</h3>
+      <p>$28,600.00</p>
+      <p class="descripcion" style="display:none;">
+        El aislador de varilla es una excelente opción para garantizar un aislamiento resistente y confiable en sistemas de cercas eléctricas. Su diseño permite una instalación sencilla y estable, manteniendo el alambre conductor firme y correctamente aislado del soporte. Ideal para proyectos de ganadería, seguridad perimetral y control de animales, incluso en condiciones exigentes de uso al aire libre.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Kit portillo x 3 M" style="display:none;">
+      <img src="../img/Kit portillo x 3 M.webp" alt="Kit portillo x 3 M" />
+      <h3>Kit portillo x 3 M</h3>
+      <p>$44,800.00</p>
+      <p class="descripcion" style="display:none;">
+        El Kit Portillo de 3 metros es la solución ideal para crear un acceso práctico y seguro en sistemas de cerca eléctrica, tradicional o de seguridad. Incluye todos los componentes necesarios para una instalación rápida y resistente, permitiendo un paso cómodo y confiable tanto para personas como para ganado. Su diseño está pensado para mantener la continuidad del cerramiento eléctrico sin comprometer la funcionalidad del acceso.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Voltimetro de lucesl" style="display:none;">
+      <img src="../img/Voltímetro de luces.webp" alt="Voltimetro de luces" />
+      <h3>Voltímetro de luces</h3>
+      <p>$41,300.00</p>
+      <p class="descripcion" style="display:none;">
+        El voltímetro de luces es una herramienta práctica e indispensable para medir con precisión el voltaje en sistemas de cercas eléctricas. Su diseño compacto, portátil y de fácil uso permite verificar rápidamente el funcionamiento y la eficiencia del sistema, mediante una lectura visual clara por niveles de luz. Ideal para aplicaciones en ganadería, seguridad perimetral y control eléctrico, asegurando un cerramiento confiable y seguro.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Varilla Cooperweld" style="display:none;">
+      <img src="../img/Varilla Cooperweld.webp" alt="Varilla Cooperweld" />
+      <h3>Varilla Cooperweld</h3>
+      <p>$38,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La varilla Cooperweld es un consumible de alta calidad, especialmente formulado para lograr soldaduras resistentes, limpias y de gran durabilidad. Gracias a su excelente conductividad eléctrica y resistencia a la corrosión, es ideal para aplicaciones en cercas eléctricas, estructuras metálicas y proyectos de soldadura industrial. Su desempeño garantiza una unión segura y estable, contribuyendo a la eficiencia y seguridad de tus instalaciones.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Grapa para varilla" style="display:none;">
+      <img src="../img/Grapa para varilla.webp" alt="Grapa para varilla" />
+      <h3>Grapa para varilla</h3>
+      <p>$8,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La grapa para varilla de tierra es un componente esencial para lograr una conexión firme, segura y de alta conductividad eléctrica entre las varillas de tierra y el sistema de puesta a tierra. Fabricada con materiales resistentes a la corrosión, está diseñada para garantizar una puesta a tierra confiable en instalaciones eléctricas, sistemas de seguridad y cercas eléctricas. Su instalación sencilla y eficaz la hace ideal para entornos residenciales, industriales o agrícolas.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Manigueta portillo" style="display:none;">
+      <img src="../img/Manigueta portillo.webp" alt="Manigueta portillo" />
+      <h3>Manigueta portillon</h3>
+      <p>$8,000.00</p>
+      <p class="descripcion" style="display:none;">
+        La manigueta portillo es un componente indispensable para facilitar la apertura y cierre de portillos en sistemas de cercas eléctricas o tradicionales. Su diseño ergonómico, robusto y resistente garantiza un uso cómodo y seguro, incluso en condiciones exigentes. Ideal para proyectos agropecuarios, de ganadería o seguridad perimetral, proporciona un paso controlado y confiable, preservando la integridad del sistema de cerramiento.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Impulso cerca eléctrica 110Va" style="display:none;">
+      <img src="../img/Impulso cerca eléctrica 110V.webp" alt="Impulso cerca eléctrica 110V" />
+      <h3>Impulso cerca eléctrica 110V</h3>
+      <p>$390,000.00</p>
+      <p class="descripcion" style="display:none;">
+        Impulsor de Cerca Eléctrica 110V  Marca Fonterra
+        Protege tu finca con potencia y confianza gracias al Impulsor de Cerca Eléctrica Fonterra 110V. Esta herramienta es ideal para mantener el control efectivo sobre tu propiedad, ganado o cultivos, ofreciendo un cerramiento seguro, eficiente y de alto rendimiento.
+        Disponible en modelos con capacidades que cubren desde 30 hasta 300 km, se adapta perfectamente a todo tipo de necesidades, desde predios pequeños hasta grandes extensiones rurales, garantizando una energía constante y confiable en tu sistema de cerca eléctrica.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Impulsor cerca eléctrica 12V" style="display:none;">
+      <img src="../img/Impulsor cerca eléctrica 12V.webp" alt="Impulsor cerca eléctrica 12V" />
+      <h3>Impulsor cerca eléctrica 12V</h3>
+      <p>$442,200.00</p>
+      <p class="descripcion" style="display:none;">
+        Impulsor de Cerca Eléctrica 12V  Marca Fonterra
+       🔋 Robusto, confiable y eficiente, el Impulsor de Cerca Eléctrica Fonterra 12V es la solución ideal para mantener el control y la seguridad de tu predio, finca o potrero. Diseñado para funcionar con batería, es perfecto para zonas rurales donde el acceso a la red eléctrica es limitado o inexistente.
+        Disponible en diversos alcances — desde 15 km hasta 300 km — se adapta a cualquier sistema de cerramiento, abarcando desde pequeños lotes hasta grandes extensiones ganaderas, garantizando un suministro constante y eficiente de energía para tu cerca eléctrica.
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de púa CL 14" style="display:none;">
+      <img src="../img/Alambre de púa CL 14.webp" alt="Alambre de púa CL 14" />
+      <h3>Alambre de púa CL 14</h3>
+      <p>$108,900.00</p>
+      <p class="descripcion" style="display:none;">
+        El alambre de púas calibre 14 ofrece el equilibrio ideal entre seguridad, durabilidad y facilidad de instalación. Perfecto para cercados agropecuarios, fincas, potreros y perímetros rurales que requieren una protección confiable.
+        Fabricado en acero galvanizado, resiste eficazmente las inclemencias del clima y la corrosión, garantizando una vida útil prolongada. Sus púas uniformes proporcionan una barrera efectiva y disuasiva, asegurando la integridad de tu terreno sin complicaciones.
+        💪 Protección firme, instalación sencilla y rendimiento garantizado. ¡Asegura tu propiedad con la mejor calidad!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de púa CL 14.5" style="display:none;">
+      <img src="../img/Alambre de púa CL 14.5.webp" alt="Alambre de púa CL 14.5" />
+      <h3>Alambre de púa CL 14.5</h3>
+      <p>$77,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El alambre de púas calibre 14.5 es ideal para cercas livianas que requieren efectividad y facilidad de manejo. Perfecto para dividir potreros, proteger cultivos o controlar el paso de animales, ofrece una solución práctica sin sacrificar resistencia.
+        Fabricado en acero galvanizado, garantiza una alta durabilidad contra la intemperie y corrosión, asegurando seguridad y rendimiento a largo plazo. Sus púas estratégicamente distribuidas proporcionan una barrera disuasiva eficaz sin la necesidad de estructuras pesadas.
+        🌿 Una opción versátil y confiable para proteger tu terreno con simplicidad y eficacia. ¡Deja que tu cerca trabaje por ti!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de púa CL 12.5" style="display:none;">
+      <img src="../img/Alambre de púa CL 12.5.webp" alt="Alambre de púa CL 12.5" />
+      <h3>Alambre de púa CL 12.5</h3>
+      <p>$194,000.00</p>
+      <p class="descripcion" style="display:none;">
+        El alambre de púas calibre 12.5 ofrece una protección robusta y confiable, ideal para cercas ganaderas, agrícolas e industriales que requieren una barrera firme y duradera. Fabricado en acero galvanizado, resiste las condiciones más exigentes sin oxidarse ni deteriorarse, garantizando una larga vida útil.
+        Su diseño con púas firmemente entrelazadas proporciona una defensa efectiva contra el ingreso de animales o personas no autorizadas, protegiendo lo que más valoras: tu trabajo, tus cultivos y tu tranquilidad.
+        🌾 Seguridad reforzada para quienes dan todo por su tierra. ¡Convierte tu cerca en una verdadera inversión!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Alambre de pua CL 16,5" style="display:none;">
+      <img src="../img/Alambre de pua CL 16,5.webp" alt="Alambre de pua CL 16,5" />
+      <h3>Alambre de pua CL 16,5</h3>
+      <p>$87,500.00</p>
+      <p class="descripcion" style="display:none;">
+        Ideal para proteger cultivos, delimitar terrenos y asegurar zonas rurales o agrícolas, el alambre de púas calibre 16.5 está fabricado en acero galvanizado, ofreciendo una excelente resistencia a la corrosión y alta durabilidad en exteriores. Su estructura firme disuade eficazmente el ingreso de animales o intrusos.
+        El diseño con púas dobles retorcidas facilita una instalación segura y efectiva, adaptándose a diferentes tipos de cercados. Es una solución práctica, económica y confiable para proteger lo que has construido con esfuerzo.
+        🌱 Seguridad para tu finca, tranquilidad para ti. ¡Asegura cada metro de tu terreno con calidad!
+      </p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    
+
+  </div>
+
+  <div id="vistaRapidaModal">
+    <div class="modal-content">
+      <span id="cerrarModal">&times;</span>
+      <img id="modalImagen" src="" alt="" />
+      <h3 id="modalTitulo"></h3>
+      <p id="modalPrecio"></p>
+      <p class="descripcion" id="modalDescripcion"></p>
+      <button id="modalComprarBtn" style="width:100%; padding:10px; background-color:#0a3e12; color:white; border:none; border-radius:4px; font-weight:bold;">Comprar ahora</button>
+    </div>
+  </div>
+
+  <div id="carritoLateral">
+    <button id="cerrarCarritoBtn">Cerrar carrito</button>
+    <h3>Tu carrito</h3>
+    <div id="carritoLista"></div>
+    <button id="comprarTodoBtn">Comprar todo</button>
+  </div>
+  <script src="../scripts/productosJs/cercas.js"></script>
+</body>
+</html>

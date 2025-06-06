@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SYNC SAS - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Daikon" rel="stylesheet">
+ <link rel="stylesheet" href="../styles/css paginas/index1Inicio.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" height="1000px" width="100px">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/Paginas/index1Inicio.html">Inicio</a></li>
+        <li><a href="./Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="./index4Contacto.html">Contacto</a></li>
+        <li><a href="./index3Nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="subnav">
+    <a href="#">Nutrición vegetal</a>
+    <a href="#">Avícola</a>
+    <a href="#">Herramientas</a>
+    <a href="#">Riego</a>
+    <a href="#">Cercas</a>
+    <a href="#">Jardinería</a>
+    <a href="#">Fumigadoras</a>
+  </div>
+
+  <div class="main-carousel">
+    <div class="main-carousel-images" id="main-carousel-images">
+      <img src="./img/semiilas 2.png" alt="Promoción Especial">
+      <img src="./img/semillas 3.png" alt="Nuevos Productos">
+      <img src="./img/semiilas 2.png" alt="Ofertas de Temporada">
+    </div>
+    <div class="main-carousel-buttons">
+      <button onclick="mainPrevSlide()">❮</button>
+      <button onclick="mainNextSlide()">❯</button>
+    </div>
+  </div>
+
+
+  <section class="products-carousel-section">
+    <h2 class="featured-products-title">Nuestros Destacados</h2>
+    <div class="products-carousel">
+      <div class="products-carousel-images" id="products-carousel-images">
+        <div class="product-slide">
+          <img src="https://via.placeholder.com/300x220?text=Producto+A" alt="Producto Destacado A">
+          <h3>Producto Destacado A</h3>
+          <p class="price">COP 100,000</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Producto A', 100000)">Añadir al Carrito</button>
+        </div>
+        <div class="product-slide">
+          <img src="https://via.placeholder.com/300x220?text=Producto+B" alt="Producto Destacado B">
+          <h3>Producto Destacado B</h3>
+          <p class="price">COP 120,000</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Producto B', 120000)">Añadir al Carrito</button>
+        </div>
+        <div class="product-slide">
+          <img src="https://via.placeholder.com/300x220?text=Producto+C" alt="Producto Destacado C">
+          <h3>Producto Destacado C</h3>
+          <p class="price">COP 90,000</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Producto C', 90000)">Añadir al Carrito</button>
+        </div>
+        <div class="product-slide">
+          <img src="https://via.placeholder.com/300x220?text=Producto+D" alt="Producto Destacado D">
+          <h3>Producto Destacado D</h3>
+          <p class="price">COP 150,000</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Producto D', 150000)">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="products-carousel-buttons">
+        <button onclick="productsPrevSlide()">❮</button>
+        <button onclick="productsNextSlide()">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <h1>Bienvenidos a SYNC SAS</h1>
+    <p>Expertos en soluciones tecnológicas para empresas en Colombia</p>
+  </section>
+
+  <section class="servicios">
+    <div class="servicio">
+      <img src="https://via.placeholder.com/60" alt="Consultoría">
+      <h3>Consultoría</h3>
+      <p>Te ayudamos a implementar tecnología en tu empresa.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://via.placeholder.com/60" alt="Infraestructura">
+      <h3>Infraestructura</h3>
+      <p>Redes, servidores y soluciones cloud.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://via.placeholder.com/60" alt="Soporte">
+      <h3>Soporte</h3>
+      <p>Atención técnica ágil y personalizada.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="#contacto">Solicita asesoría gratuita</a>
+  </div>
+
+  <section class="testimonios">
+    <h2>Testimonios</h2>
+    <blockquote>
+      “SYNC SAS transformó por completo la eficiencia de nuestro sistema.”<br>
+      <strong>- Cliente Satisfecho</strong>
+    </blockquote>
+  </section>
+
+  <footer>
+    <p>SYNC SAS &copy; 2025 - Todos los derechos reservados</p>
+    <p>Tel: +57 XXX XXX XXXX | Email: contacto@syncsas.com.co</p>
+  </footer>
+  <script src="../scripts/paginasJS/inicio.js"></script>
+
+</body>
+</html>

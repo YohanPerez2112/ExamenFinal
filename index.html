@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agropecuaria Los Torres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Daikon" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css paginas/index.css">
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/LogoAgropecuaria.png" alt="Logo SYNC SAS" >
+    </div>
+    <nav>
+      <ul id="menuPrincipal">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="./Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="./Paginas/index3Nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="subnav">
+    <a href="./Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="./Productos/Avicola.html">Avícola</a>
+    <a href="./Productos/Herrramientas.html">Herramientas</a>
+    <a href="./Productos/Riego.html">Riego</a>
+    <a href="./Productos/Cercas.html">Cercas</a>
+    <a href="./Productos/Jardineria.html">Jardinería</a>
+    <a href="./Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="main-carousel">
+    <div class="main-carousel-images" id="main-carousel-images">
+      <img src="./img/semillas1.png" alt="Promoción Especial">
+      <img src="./img/semillas2.png" alt="Nuevos Productos">
+      <img src="./img/semiilas 2.png" alt="Ofertas de Temporada">
+    </div>
+    <div class="main-carousel-buttons">
+      <button onclick="mainPrevSlide()">❮</button>
+      <button onclick="mainNextSlide()">❯</button>
+    </div>
+  </div>
+  <section class="products-carousel-section">
+    <h2 class="featured-products-title">Nuestros Destacados</h2>
+    <div class="products-carousel">
+      <div class="products-carousel-images" id="products-carousel-images">
+        <div class="product-slide">
+          <img src="./img/Fumigadora Activa Royal Condor.webp" alt="Fumigadora Activa Royal Condo">
+          <h3>Fumigadora Activa Royal Condor</h3>
+          <p class="price">COP 265,000.00</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Fumigadora Activa Royal Condor', 265000)">Añadir al Carrito</button>
+        </div>
+        <div class="product-slide">
+          <img src="./img/Bélico 500 SC.webp" alt="Belico 500 SC">
+          <h3>Bélico 500 SC</h3>
+          <p class="price">COP 29,000.00</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Bélico 500 SC', 29000)">Añadir al Carrito</button>
+        </div>
+        <div class="product-slide">
+          <img src="./img/Tanques almacenamiento de agua.webp" alt="Tanques almacenamiento de agua">
+          <h3>Tanques almacenamiento de agua</h3>
+          <p class="price">COP 148,000.00</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Tanques almacenamiento de agua', 148000)">Añadir al Carrito</button>
+        </div>
+        <div class="product-slide">
+          <img src="./img/Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo.webp" alt="Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo">
+          <h3>Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo</h3>
+          <p class="price">COP 256,300.00</p>
+          <button class="add-to-cart-btn" onclick="addToCartClicked('Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo', 256300)">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="products-carousel-buttons">
+        <button onclick="productsPrevSlide()">❮</button>
+        <button onclick="productsNextSlide()">❯</button>
+      </div>
+    </div>
+  </section>
+  <section class="hero">
+    <h1>Explora Nuestra Nueva Página</h1>
+    <img src="./img/paginaweb.jpeg" alt="" width="300px">
+    <p></p>
+  </section>
+  <section class="servicios">
+    <div class="servicio">
+      <img src="./img/consultoria.png" alt="Consultoría">
+      <h3>Consultoría</h3>
+      <p>Te ayudamos a implementar tecnología en tu empresa.</p>
+    </div>
+    <div class="servicio">
+      <img src="./img/infraestructura.png" alt="Infraestructura">
+      <h3>Infraestructura</h3>
+      <p>Redes, servidores y soluciones cloud.</p>
+    </div>
+    <div class="servicio">
+      <img src="./img/soporte.png" alt="Soporte">
+      <h3>Soporte</h3>
+      <p>Atención técnica ágil y personalizada.</p>
+    </div>
+  </section>
+  <div class="cta">
+    <a href="#contacto">Solicita asesoría gratuita</a>
+  </div>
+  <section class="testimonios">
+   
+   
+  </section>
+  <footer>
+    <p>Agropecuaria los Torres</p>
+    <p>Tel: 3112367177  | Email: info@agropecuarialostorres.com</p>
+  </footer>
+  <script>
+    let mainCurrentIndex = 0;
+    const mainImagesContainer = document.getElementById('main-carousel-images');
+    const mainTotalSlides = mainImagesContainer.children.length;
+    mainImagesContainer.style.width = `${mainTotalSlides * 100}%`;
+    for (let i = 0; i < mainTotalSlides; i++) {
+        mainImagesContainer.children[i].style.width = `${100 / mainTotalSlides}%`;
+    }
+    function showMainSlide(index) {
+      if (index >= mainTotalSlides) {
+        mainCurrentIndex = 0;
+      } else if (index < 0) {
+        mainCurrentIndex = mainTotalSlides - 1;
+      } else {
+        mainCurrentIndex = index;
+      }
+      mainImagesContainer.style.transform = `translateX(-${mainCurrentIndex * (100 / mainTotalSlides)}%)`;
+    }
+    function mainNextSlide() {
+      showMainSlide(mainCurrentIndex + 1);
+    }
+    function mainPrevSlide() {
+      showMainSlide(mainCurrentIndex - 1);
+    }
+    setInterval(mainNextSlide, 5000);
+    showMainSlide(0);
+    let productsCurrentIndex = 0;
+    const productsImagesContainer = document.getElementById('products-carousel-images');
+    const productsTotalSlides = productsImagesContainer.children.length;
+    productsImagesContainer.style.width = `${productsTotalSlides * 100}%`;
+    for (let i = 0; i < productsTotalSlides; i++) {
+        productsImagesContainer.children[i].style.flexBasis = `${100 / productsTotalSlides}%`;
+    }
+    function showProductsSlide(index) {
+      if (index >= productsTotalSlides) {
+        productsCurrentIndex = 0;
+      } else if (index < 0) {
+        productsCurrentIndex = productsTotalSlides - 1;
+      } else {
+        productsCurrentIndex = index;
+      }
+      productsImagesContainer.style.transform = `translateX(-${productsCurrentIndex * (100 / productsTotalSlides)}%)`;
+    }
+    function productsNextSlide() {
+      showProductsSlide(productsCurrentIndex + 1);
+    }
+    function productsPrevSlide() {
+      showProductsSlide(productsCurrentIndex - 1);
+    }
+    showProductsSlide(0);
+    function addToCartClicked(productName, productPrice) {
+      alert(`"${productName}" (Precio: COP ${productPrice}) se ha añadido al carrito (simulación).`);
+    }
+  </script>
+</body>
+</html>

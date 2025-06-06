@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario</title>
+   <link rel="stylesheet" href="../styles/css paginas/index4Contacto.css">
+  
+</head>
+<body>
+
+  <header class="encabezado">
+    <a href="#" class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo Agropecuaria Los Torres">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+         <li><a href="../Paginas/index4Contacto.html">contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <form id="contact-form">
+    <label for="name">Su nombre</label>
+    <input id="name" name="name" required />
+
+    <label for="email">Correo electrónico</label>
+    <input id="email" name="email" type="email" required />
+    <p>Esto me ayudará a responder a su consulta por correo electrónico.</p>
+
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" required></textarea>
+    <p>¿Qué te gustaría discutir?</p>
+
+    <button type="submit">Entregar</button>
+  </form>
+  <script src="../scripts/paginasJS/contacto.js"></script>
+</body>
+</html>

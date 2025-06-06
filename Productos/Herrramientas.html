@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="../styles/css productos/Herramientas.css">
+<style>
+ 
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo SYNC SAS" />
+    </div>
+    <nav>
+      <div class="menu-hamburguesa" id="menuHamburguesa">&#9776;</div>
+      <ul id="menuPrincipal">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+        <li><a id="abrirCarrito" href="javascript:void(0)">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="fondoMenuMovil"></div>
+  <div class="subnav">
+    <a href="../Productos/Nutricionvegetal.html">Nutrición vegetal</a>
+    <a href="../Productos/Avicola.html">Avícola</a>
+    <a href="../Productos/Herrramientas.html">Herramientas</a>
+    <a href="../Productos/Riego.html">Riego</a>
+    <a href="../Productos/Cercas.html">Cercas</a>
+    <a href="../Productos/Jardineria.html">Jardinería</a>
+    <a href="../Productos/Fumigadoras.html">Fumigadoras</a>
+  </div>
+  <div class="tienda-header">
+    <div>
+      <h2>Herramientas</h2>
+      
+    </div>
+   
+  
+    <div style="margin-left:20px; display: flex; align-items: center; max-width: 270px; position: relative;">
+      <input
+        type="text"
+        id="busquedaProducto"
+        placeholder="Buscar producto..."
+        style="padding:8px 36px 8px 12px; border-radius:6px; border:1px solid #ccc; font-size:16px; width: 100%;"
+      >
+      <span style="position:absolute; right:10px; top:50%; transform:translateY(-50%); pointer-events:none; color:#888;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div class="productos-grid" id="productosGrid">
+    <div class="producto" data-nombre="Lima Nicholson Pareja RT-6 con Cabo">
+      <img src="../img/Lima Nicholson Pareja RT6 con Cabo.webp" alt="Lima Nicholson Pareja RT-6 con Cabo" />
+      <h3>Lima Nicholson Pareja RT-6" con CaboC</h3>
+      <p>$8,000.00</p>
+      <p class="descripcion" style="display:none;">Con un diseño tradicional de 6 pulgadas, esta lima de la marca Nicholson es ideal para trabajos de afilado y retoque de herramientas. Su par de limas con cabo ofrece mayor comodidad y control durante el uso, permitiendo mantener las herramientas afiladas y listas para el trabajo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    <div class="producto" data-nombre="Lima con Cabo Colima Pareja 6">
+      <img src="../img/Lima con Cabo Colima Pareja 6.webp" alt="Lima con Cabo Colima Pareja 6" />
+      <h3>Lima con Cabo Colima Pareja 6"</h3>
+      <p>$5,000.00</p>
+      <p class="descripcion" style="display:none;">La lima con cabo de 6 pulgadas es perfecta para afilar y dar forma a herramientas de corte o superficies metálicas. Su tamaño compacto y el diseño ergonómico del cabo permiten un uso cómodo y eficiente, ayudando a mantener tus herramientas en óptimas condiciones.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    <div class="producto" data-nombre="Rula 24 Gavilan Coloráo 706">
+      <img src="../img/Rula 24 Gavilan Coloráo 706.webp" alt="Rula 24 Gavilan Coloráo 706" />
+      <h3>Rula 24 Gavilan Coloráo 706</h3>
+      <p>$19,900.00</p>
+      <p class="descripcion" style="display:none;">Esta rula de 24 pulgadas es una herramienta de alta resistencia, ideal para transportar y mover cargas en el campo o en el jardín. Su diseño robusto y su estructura de alta calidad aseguran durabilidad y eficiencia en cada uso, facilitando tareas de manejo y transporte de materiales.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    
+    <div class="producto" data-nombre="Lienza Truper en Fibra Vidrio 30mts" style="display:none;">
+      <img src="../img/Lienza Truper en Fibra Vidrio 30mts.webp" alt="Lienza Truper en Fibra Vidrio 30mts" />
+      <h3>Lienza Truper en Fibra Vidrio 30mts</h3>
+      <p>$100,000.00</p>
+      <p class="descripcion" style="display:none;">La línea Truper de 30 metros es ideal para medir y marcar terrenos agrícolas. Su fibra de vidrio proporciona resistencia y durabilidad, mientras que su diseño flexible y ligero facilita su transporte y almacenamiento. Una herramienta imprescindible para realizar mediciones precisas en el campo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+    <div class="producto" data-nombre="Serrucho Gavilan Curvo Podador 12 M/Plastico" style="display:none;">
+      <img src="../img/Serrucho Gavilan Curvo Podador 12 M Plástico.webp" alt="Serrucho Gavilan Curvo Podador 12 M/Plastico" />
+      <h3>Serrucho Gavilan Curvo Podador 12" M/Plástico</h3>
+      <p>$60,600.00</p>
+      <p class="descripcion" style="display:none;">El serrucho Gavilan curvo de 12 pulgadas es perfecto para podar ramas gruesas de forma rápida y eficiente. Su diseño curvo y el mango de plástico permiten un agarre cómodo y un uso prolongado sin esfuerzo, siendo una herramienta esencial en el cuidado de jardines y huertos.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo" style="display:none;">
+      <img src="../img/Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo.webp" alt="Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo" />
+      <h3>Coche - Carretilla Econo Colima Verde Plast 5.5 Pie Llantas Antipinchazo</h3>
+      <p>$253,600.00</p>
+      <p class="descripcion" style="display:none;">La carretilla Econo Colima es ideal para el transporte de materiales en el campo o en el jardín. Con llantas antipinchazo y un diseño resistente, es perfecta para quienes necesitan durabilidad y comodidad en sus trabajos diarios. Su tamaño de 5.5 pies ofrece suficiente capacidad para cargar y transportar herramientas o insumos.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Cortador de Ramas Altas Gavilan sin Mango 14" style="display:none;">
+      <img src="../img/Cortador de Ramas Altas Gavilan sin Mango 14.webp" alt="Cortador de Ramas Altas Gavilan sin Mango 14" />
+      <h3>Cortador de Ramas Altas Gavilan sin Mango 14"</h3>
+      <p>$52,300.00</p>
+      <p class="descripcion" style="display:none;">Este cortador de ramas altas de 14 pulgadas es perfecto para alcanzar ramas que están fuera del alcance normal. Su diseño sin mango permite que se pueda adaptar a diferentes tipos de mangos según las necesidades del usuario, brindando flexibilidad y comodidad al cortar en alturas.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Tijera Gavilan Podadora 500 Pintada 7, 8 y 9" style="display:none;">
+      <img src="../img/Tijera Gavilan Podadora 500 Pintada 7, 8 y 9.webp" alt="Tijera Gavilan Podadora 500 Pintada 7, 8 y 9" />
+      <h3>Tijera Gavilan Podadora 500 Pintada 7", 8" y 9"</h3>
+      <p>$28,200.00</p>
+      <p class="descripcion" style="display:none;">Esta tijera de 7 pulgadas es ideal para podar ramas finas y medianas. Su construcción robusta y el acabado pintado proporcionan un buen agarre y resistencia al desgaste. Una herramienta perfecta para el cuidado de plantas y árboles de forma precisa.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Tijera Podadora Incolma Níquelada Tradicional 9" style="display:none;">
+      <img src="../img/Tijera Podadora Incolma Níquelada Tradicional 9.webp" alt="Tijera Podadora Incolma Níquelada Tradicional 9" />
+      <h3>Tijera Podadora Incolma Níquelada Tradicional 9"</h3>
+      <p>$39,000.00</p>
+      <p class="descripcion" style="display:none;">Con esta tijera podadora de 9 pulgadas, podrás realizar cortes precisos y eficaces en plantas, arbustos y árboles frutales. Su diseño tradicional y niquelado la hace resistente a la corrosión, asegurando una larga vida útil, perfecta para el jardinero o agricultor que busca calidad y durabilidad.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Machete Aguila Corneta Niquel" style="display:none;">
+      <img src="../img/Machete Águila Corneta Níquel.webp" alt="Machete Águila Corneta Niquel" />
+      <h3>Machete Aguila Corneta Niquel</h3>
+      <p>$23,400.00</p>
+      <p class="descripcion" style="display:none;">Este machete de alta calidad, fabricado con acero inoxidable y recubierto en níquel, es ideal para trabajos de corte en terrenos agrícolas. Con una longitud de hoja que varía de 14” a 24”, su diseño robusto y duradero lo convierte en una herramienta esencial para labores de poda, desbroce y corte de ramas gruesas.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Machete Aguila Corneta Barr 14 a 22" style="display:none;">
+      <img src="../img/Machete Águila Corneta Barr 14 a 22.webp" alt="Machete Águila Corneta Barr 14 a 22" />
+      <h3>Machete Aguila Corneta Barr 14” a 22"</h3>
+      <p>$19,000.00</p>
+      <p class="descripcion" style="display:none;">Modelo con hoja más ancha y reforzada (barrigón), ideal para corte de materiales más gruesos como tallos fibrosos, ramas duras o cultivos como plátano y yuca.
+        Uso recomendado: Limpieza pesada y apertura de caminos.
+        Beneficio: Corta con menor esfuerzo gracias a su diseño curvo</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Machete Aguila Corneta Pulido 14 a 22" style="display:none;">
+      <img src="../img/Machete Aguila Corneta Pulido 14 a 22.webp" alt="Machete Aguila Corneta Pulido 14 a 22" />
+      <h3>Machete Aguila Corneta Pulido 14” a 22”</h3>
+      <p>$19,000.00</p>
+      <p class="descripcion" style="display:none;">Machete tradicional de uso agropecuario con hoja pulida de acero templado. Disponible en tamaños de 14 a 22 pulgadas para adaptarse a distintas tareas: corte de caña, maleza, ramas o limpieza de terreno.
+      Ventaja: Equilibrio entre filo y peso, ideal para uso diario Marca reconocida por su durabilidad.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Gurbia Gavilan" style="display:none;">
+      <img src="../img/Gurbia Gavilan.webp" alt="Gurbia Gavilan" />
+      <h3>Gurbia Gavilan</h3>
+      <p>$7,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta especializada para labores de desmane en cultivos frutales, permitiendo cortar brotes no deseados de forma precisa. Su tamaño de 4” brinda un manejo cómodo y ágil.
+        Beneficio: Promueve el crecimiento saludable de los cultivos.
+        Color llamativo para fácil localización en campo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Pala Cuadrada Cargadora Colima" style="display:none;">
+      <img src="../img/Pala Cuadrada Cargadora Colima.webp" alt="Pala Cuadrada Cargadora Colima" />
+      <h3>Pala Cuadrada Cargadora Colima</h3>
+      <p>$22,800.00</p>
+      <p class="descripcion" style="display:none;">🛠️ Pala Cuadrada Cargadora #2 – Ref. 68950401 (S.C. Colima)
+      Pala de hoja cuadrada robusta, perfecta para cargar, nivelar y remover materiales sueltos como tierra, estiércol, arena o compost. Su tamaño #2 la hace más ligera, ideal para tareas domésticas o semiprofesionales.
+      Aplicación: Establos, cultivos, viveros y zonas residenciales rurales.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Pala Collins Redonda Estadar sin mango" style="display:none;">
+      <img src="../img/Pala Collins Redonda Estándar sin mango.webp" alt="Pala Collins Redonda Estandar sin mango" />
+      <h3>Pala Collins Redonda Estandar sin mango</h3>
+      <p>$15,800.00</p>
+      <p class="descripcion" style="display:none;">Pala Collins Redonda Estándar N° 2 Sin Mango: Cabezal de pala redonda para tareas de carga ligera y excavación en terrenos suaves o moderadamente compactos. Fabricada en acero de alta calidad, lista para adaptarse a mangos de madera o metálicos.
+       Uso recomendado: Agricultura, jardinería y trabajos de campo.
+       Beneficio: Ligera y fácil de manipular para jornadas prolongadas</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Paladraga Colima Cabo Metalico" style="display:none;">
+      <img src="../img/Paladraga Colima Cabo Metálico.webp" alt="Paladraga Colima Cabo Metalico" />
+      <h3>Paladraga Colima Cabo Metalico</h3>
+      <p>$72,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta robusta para trabajos de excavación, limpieza y remoción de material duro como raíces, piedras o tierra compacta. Su cabo metálico le brinda mayor durabilidad y resistencia al desgaste, ideal para uso rudo y continuo.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Paladraga Colima 48" style="display:none;">
+      <img src="../img/Paladraga Colima 48.webp" alt="Paladraga Colima 48" />
+      <h3>Paladraga Colima 48</h3>
+      <p>$67,800.00</p>
+      <p class="descripcion" style="display:none;">Herramienta doble propósito para corte y remoción de raíces, tierra dura y materiales pesados. Su hoja ancha en un extremo y punta afilada en el otro permiten trabajar con eficiencia en limpieza de terrenos, excavaciones y mantenimiento de drenajes.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Hoyador con Mango Metalico" style="display:none;">
+      <img src="../img/Palín Hoyador con Mango Metálico.webp" alt="Palin Hoyador con Mango Metalico" />
+      <h3>Palin Hoyador con Mango Metalico</h3>
+      <p>$100,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta lista para usar, con mango metálico integrado, ideal para trabajos continuos y exigentes. Su estructura ofrece un agarre firme y resistente, especialmente útil en terrenos duros o con presencia de piedras.
+       Beneficio: Mayor durabilidad y menor mantenimiento que los mangos de madera..</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Collins Hoyador Sin Mango" style="display:none;">
+      <img src="../img/Palín Collins Hoyador Sin Mango.webp" alt="Palin Collins Hoyador Sin Mango" />
+      <h3>Palin Collins Hoyador Sin Mango</h3>
+      <p>$40,400.00</p>
+      <p class="descripcion" style="display:none;">Cabezal de palín fabricado en acero de alta resistencia, ideal para tareas de hoyado profundo en cultivos forestales, ornamentales y frutales. Su diseño sin mango permite al usuario elegir el tipo de empuñadura más adecuada según el terreno o la tarea.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Hoyador Herragro CAL 16" style="display:none;">
+      <img src="../img/Palín Hoyador Herragro CAL 16.webp" alt="Palin Hoyador Herragro CAL 16" />
+      <h3>Palin Hoyador Herragro CAL 16</h3>
+      <p>$16,000.00</p>
+      <p class="descripcion" style="display:none;">Herramienta resistente fabricada en acero al carbono de alta calidad, templado para máxima durabilidad. Ideal para abrir hoyos profundos en suelos compactos, rocosos o arcillosos. Su diseño permite trabajar de forma rápida y eficaz en la instalación de postes, siembra de plántulas o colocación de tutores.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Desmachador Herragro" style="display:none;">
+      <img src="../img/Palin Desmachador Herragro.webp" alt="Palin Desmachador Herragro" />
+      <h3>Palin Desmachador Herragro</h3>
+      <p>$27,000.00</p>
+      <p class="descripcion" style="display:none;">Especialmente diseñado para eliminar malezas y raíces superficiales en cultivos y áreas verdes. Su hoja amplia permite cortes limpios y precisos, y su peso balanceado mejora el control del usuario. Ideal para trabajos de mantenimiento en cultivos establecidos o preparación del terreno.
+       Beneficio clave: Reduce el uso de herbicidas químicos.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Palin Hoyador Herragro CAL 13" style="display:none;">
+      <img src="../img/Palin Hoyador Herragro CAL 13.webp" alt="Palin Hoyador Herragro CAL 13" />
+      <h3>Palin Hoyador Herragro CAL 13</h3>
+      <p>$30,300.00</p>
+      <p class="descripcion" style="display:none;">Herramienta resistente fabricada en acero al carbono de alta calidad, templado para máxima durabilidad. Ideal para abrir hoyos profundos en suelos compactos, rocosos o arcillosos. Su diseño permite trabajar de forma rápida y eficaz en la instalación de postes, siembra de plántulas o colocación de tutores</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Recolector Truper de Frutas Sin Mango" style="display:none;">
+      <img src="../img/Recolector Truper de Frutas – Sin Mango.webp" alt="Recolector Truper de Frutas Sin Mango" />
+      <h3>Recolector Truper de Frutas Sin Mango</h3>
+      <p>$41,200.00</p>
+      <p class="descripcion" style="display:none;">Cabezal recolector versátil para frutas como mangos, aguacates, limones, naranjas, entre otros. Su diseño de canastilla metálica con bordes suaves permite cortar el tallo sin dañar el fruto, lo que conserva su calidad postcosecha. Se adapta fácilmente a mangos telescópicos o de madera.
+       Ideal para cultivos frutales en altura.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+    <div class="producto" data-nombre="Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa)" style="display:none;">
+      <img src="../img/Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa).webp" alt="Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa)" />
+      <h3>Canasta Recolectora de Café 18 kilos Amarilla Mitto (sin correa)</h3>
+      <p>$23,700.00</p>
+      <p class="descripcion" style="display:none;">Diseñada especialmente para las jornadas intensas de recolección, esta canasta de alta capacidad (18 kg) es ideal para cultivos de café, cacao y frutos similares. Su color amarillo facilita la visibilidad en campo y mejora la seguridad del operario.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+     <div class="producto" data-nombre="Guantes de carnaza" style="display:none;">
+      <img src="../img/Guantes de carnaza.webp" alt="Guantes de carnaza" />
+      <h3>Guantes de carnaza</h3>
+      <p>$9,500.00</p>
+      <p class="descripcion" style="display:none;">Los guantes de carnaza cortos son ideales para trabajos exigentes en entornos agrícolas, industriales y de construcción. Fabricados en cuero resistente, ofrecen alta durabilidad, protección contra abrasión, calor moderado y objetos punzantes, sin sacrificar la comodidad y la movilidad de la mano.</p>
+      <button class="vista">Vista rápida</button>
+      <button class="comprar">Comprar ahora</button>
+    </div>
+
+  </div>
+  <div id="vistaRapidaModal">
+    <div class="modal-content">
+      <span id="cerrarModal">&times;</span>
+      <img id="modalImagen" src="" alt="" />
+      <h3 id="modalTitulo"></h3>
+      <p id="modalPrecio"></p>
+      <p class="descripcion" id="modalDescripcion"></p>
+      <button id="modalComprarBtn" style="width:100%; padding:10px; background-color:#0a3e12; color:white; border:none; border-radius:4px; font-weight:bold;">Comprar ahora</button>
+    </div>
+  </div>
+  <div id="carritoLateral">
+    <button id="cerrarCarritoBtn">Cerrar carrito</button>
+    <h3>Tu carrito</h3>
+    <div id="carritoLista"></div>
+    <button id="comprarTodoBtn">Comprar todo</button>
+  </div>
+  <script src="../scripts/productosJs/herramienta.js"></script>
+</body>
+</html>

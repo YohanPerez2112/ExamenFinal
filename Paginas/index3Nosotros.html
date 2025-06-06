@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nosotros - Agropecuaria Los Torres</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="../styles/css paginas/index3Nosotros.css">
+
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <a href="index.html" class="logo">
+      <img src="../img/LogoAgropecuaria.png" alt="Logo Agropecuaria Los Torres">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Paginas/index2Tienda.html">Tienda</a></li>
+        <li><a href="../Paginas/index4Contacto.html">Contacto</a></li>
+        <li><a href="../Paginas/index3Nosotros.html">Nosotros</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <section class="texto-encabezado">
+    <h1>Nosotros</h1>
+    <p>Conoce la historia y misión de Agropecuaria Los Torres</p>
+  </section>
+
+  <section class="ruta">
+   
+
+  <main>
+    <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <article style="flex: 1 1 60%;">
+        <h2>Comprometidos con el campo y contigo</h2>
+        <p>En Agropecuaria Los Torres trabajamos cada día para brindar soluciones innovadoras y sostenibles al sector agropecuario. Nos enfocamos en el bienestar de nuestros clientes, animales y cultivos.</p>
+        <p>Con más de 9 años de experiencia, somos un referente en productos agropecuarios de calidad, atención personalizada y compromiso con el desarrollo rural.</p>
+
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" onclick="toggleCollapse('mision')">Misión</div>
+            <div class="card-body" id="mision">
+              <p>Brindar productos y servicios agropecuarios de calidad que impulsen el desarrollo del sector rural, promoviendo prácticas sostenibles y el bienestar de nuestros clientes.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" onclick="toggleCollapse('vision')">Visión</div>
+            <div class="card-body" id="vision">
+              <p>Ser la empresa líder en soluciones agropecuarias en la región, reconocida por su innovación, responsabilidad social y compromiso con el medio ambiente.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" onclick="toggleCollapse('valores')">Valores</div>
+            <div class="card-body" id="valores">
+              <p>Responsabilidad, honestidad, respeto, innovación y compromiso con la sostenibilidad del agro colombiano.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <aside style="flex: 1 1 35%;">
+        <img src="../img/logoNosotros.png" alt="Agropecuaria Los Torres" >
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>2025 © Agropecuaria Los Torres. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../scripts/paginasJS/nosotros.js"></script>
+</body>
+
+</html>
