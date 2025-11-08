@@ -1,0 +1,25 @@
+:root{
+  --primary: #ff6b6b; /* paleta: tonos cálidos para tienda de ropa */
+  --secondary: #1f2937;
+  --bg: #f8f9fa;
+}
+
+/* navbar override */
+.navbar-brand { font-weight: 700; color: var(--primary) !important; }
+.sidebar { background: white; min-height: 100vh; border-right: 1px solid #e9ecef; }
+.product-card img { max-height: 160px; object-fit: cover; }
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
+/* responsive tweaks */
+@media (max-width: 767px){
+  .sidebar { display: none; }
+}
