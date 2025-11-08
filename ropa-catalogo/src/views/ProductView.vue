@@ -29,7 +29,7 @@
           :class="category === 'acc' ? 'btn-primary' : 'btn-outline-primary'"
           @click="setCategory('acc')"
         >
-          Accesorios 🕶️
+          Accesorios 💍
         </button>
       </div>
     </div>
@@ -47,6 +47,8 @@
         <ProductCardComponent
           :product="p"
           @view="viewProduct"
+          @delete="deleteProduct(p.id)"
+          @edit="editProduct(p)"
         />
       </div>
     </div>
@@ -80,18 +82,11 @@ export default {
       this.loading = true
       try {
         const data = await api.listProducts()
-        // 🔹 Filtrar solo las categorías que nos interesan
-        const allowed = [
-          'mens-shirts', 'mens-shoes', 'mens-watches',
-          'womens-dresses', 'womens-shoes', 'womens-bags',
-          'womens-jewellery', 'womens-watches',
-          'sunglasses', 'fragrances'
-        ]
-        this.products = data.filter(p => allowed.includes(p.category))
-        this.filtered = [...this.products]
+        this.products = data
+        this.filtered = data
       } catch (err) {
         console.error(err)
-        alert('Error cargando productos')
+        alert('Error cargando productos desde Fake Store API')
       } finally {
         this.loading = false
       }
@@ -101,24 +96,31 @@ export default {
       if (type === 'all') {
         this.filtered = this.products
       } else if (type === 'men') {
-        this.filtered = this.products.filter(p =>
-          ['mens-shirts', 'mens-shoes', 'mens-watches'].includes(p.category)
-        )
+        this.filtered = this.products.filter(p => p.category === "men's clothing")
       } else if (type === 'women') {
-        this.filtered = this.products.filter(p =>
-          [
-            'womens-dresses', 'womens-shoes',
-            'womens-bags', 'womens-jewellery', 'womens-watches'
-          ].includes(p.category)
-        )
+        this.filtered = this.products.filter(p => p.category === "women's clothing")
       } else if (type === 'acc') {
-        this.filtered = this.products.filter(p =>
-          ['sunglasses', 'fragrances'].includes(p.category)
-        )
+        this.filtered = this.products.filter(p => p.category === 'jewelery')
       }
     },
     viewProduct(product) {
-      alert(`${product.title}\n\n${product.description}\n\n$${product.price}`)
+      alert(`${product.title}\n\n${product.description}\n\nPrecio: $${product.price}`)
+    },
+    async deleteProduct(id) {
+      if (confirm('¿Seguro que deseas eliminar este producto?')) {
+        await api.deleteProduct(id)
+        this.products = this.products.filter(p => p.id !== id)
+        this.setCategory(this.category)
+        alert('Producto eliminado (simulado en API FakeStore)')
+      }
+    },
+    async editProduct(product) {
+      const nuevoTitulo = prompt('Editar nombre del producto:', product.title)
+      if (nuevoTitulo && nuevoTitulo !== product.title) {
+        product.title = nuevoTitulo
+        await api.updateProduct(product.id, product)
+        alert('Producto editado (simulado en API FakeStore)')
+      }
     }
   }
 }

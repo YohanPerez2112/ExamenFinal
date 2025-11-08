@@ -1,19 +1,21 @@
+// src/services/api.js
 import axios from 'axios'
 
-const API_BASE = 'https://dummyjson.com' // endpoints: /products
+const API_BASE = 'https://fakestoreapi.com'
 
 export default {
   async listProducts() {
     const res = await axios.get(`${API_BASE}/products`)
-    return res.data.products
-  },
-  async getProduct(id) {
-    const res = await axios.get(`${API_BASE}/products/${id}`)
-    return res.data
+    // 🔹 Solo dejamos ropa y joyería (accesorios)
+    return res.data.filter(
+      p =>
+        p.category === "men's clothing" ||
+        p.category === "women's clothing" ||
+        p.category === 'jewelery'
+    )
   },
   async createProduct(product) {
-    // DummyJSON supports POST /products (returns simulated creation)
-    const res = await axios.post(`${API_BASE}/products/add`, product)
+    const res = await axios.post(`${API_BASE}/products`, product)
     return res.data
   },
   async updateProduct(id, product) {
