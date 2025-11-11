@@ -1,7 +1,15 @@
 :root{
-  --primary: #ff6b6b; /* paleta: tonos cálidos para tienda de ropa */
+  /* paleta: tonos cálidos para tienda de ropa */
+  --primary: #ff6b6b; 
   --secondary: #1f2937;
   --bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  /*Tema Oscuro */
+  --primary: #ff6b6b;         
+  --secondary: #1f2937;        
+  --bg: #242424;              
 }
 
 /* navbar override */
