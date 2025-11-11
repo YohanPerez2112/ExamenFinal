@@ -7,7 +7,7 @@ Proyecto de ejemplo para el segundo parcial: aplicación modularizada que muestr
 - Vue 3 (Vite)
 - Bootstrap 5.3
 - Axios
-- DummyJSON (API pública para productos)
+- fakeStoreApi (API pública para productos)
 
 ## Estructura
 - `src/components` -> componentes reutilizables (Navbar, Sidebar, Footer, ProductCard)
