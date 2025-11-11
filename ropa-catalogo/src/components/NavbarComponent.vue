@@ -1,7 +1,7 @@
 <template>
  <nav class="navbar navbar-expand navbar-light bg-white shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">RopaStore</a>
+      <a class="navbar-brand" href="#">Ropa-Catalogo</a>
       <div class="d-flex align-items-center">
         <button class="theme-toggle me-3" @click="toggleTheme">
           {{ isDark ? '☀️' : '🌙' }}

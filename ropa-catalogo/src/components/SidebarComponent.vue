@@ -7,6 +7,6 @@
       </li>
     </ul>
     <hr />
-    <small class="text-muted">RopaStore © 2025</small>
+    <small class="text-muted">Ropa-Catalogo © 2025</small>
   </div>
 </template>

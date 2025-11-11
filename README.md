@@ -1,5 +1,5 @@
 # SegundoParcial 
-# RopaStore - Catálogo modularizado (Vue 3 + Bootstrap)
+# Ropa-Cataologo - Catálogo modularizado (Vue 3 + Bootstrap)
 
 Proyecto de ejemplo para el segundo parcial: aplicación modularizada que muestra un catálogo de ropa.
 
@@ -25,7 +25,7 @@ Credenciales en `public/users.json`: `admin/admin123` o `user/user123`.
 > Nota: validación educativa con JSON local; no es un sistema seguro.
 
 ## CRUD de Productos
-- Se usa DummyJSON para listar y simular creación/actualización/eliminación.
+- Se usa FakeStoreApi para listar y simular creación/actualización/eliminación.
 - En la entrega se debe explicar que algunas acciones son simuladas y que para producción se usaría una API real con autenticación.
 
 ## Evidencia de colaboración

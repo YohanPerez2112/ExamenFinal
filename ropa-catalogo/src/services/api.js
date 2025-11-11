@@ -1,4 +1,4 @@
-// src/services/api.js
+
 import axios from 'axios'
 
 const API_BASE = 'https://fakestoreapi.com'
@@ -6,7 +6,7 @@ const API_BASE = 'https://fakestoreapi.com'
 export default {
   async listProducts() {
     const res = await axios.get(`${API_BASE}/products`)
-    // 🔹 Solo dejamos ropa y joyería (accesorios)
+
     return res.data.filter(
       p =>
         p.category === "men's clothing" ||

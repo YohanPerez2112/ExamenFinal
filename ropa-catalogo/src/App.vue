@@ -8,6 +8,4 @@ export default {
 }
 </script>
 
-<style>
-/* Global small rules if needed */
-</style>
+

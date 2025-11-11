@@ -41,7 +41,7 @@ export default {
         const data = await res.json()
         const found = data.users.find(u => u.username === this.username && u.password === this.password)
         if (found) {
-          // guardar usuario en sessionStorage simple
+          
           sessionStorage.setItem('user', JSON.stringify(found))
           this.$router.push('/dashboard')
         } else {
