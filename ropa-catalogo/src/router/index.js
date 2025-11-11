@@ -10,7 +10,6 @@ const routes = [
     path: '/dashboard',
     component: DashboardView,
     children: [
-      // 👇 redirige correctamente dentro del dashboard
       { path: '', redirect: '/dashboard/productos' },
       { path: 'productos', component: ProductView }
     ]
