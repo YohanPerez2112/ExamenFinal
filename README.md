@@ -1,32 +1,5 @@
-# SegundoParcial 
-# Ropa-Cataologo - Catálogo modularizado (Vue 3 + Bootstrap)
+# Vue 3 + Vite
 
-Proyecto de ejemplo para el segundo parcial: aplicación modularizada que muestra un catálogo de ropa.
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Tecnologías
-- Vue 3 (Vite)
-- Bootstrap 5.3
-- Axios
-- fakeStoreApi (API pública para productos)
-
-## Estructura
-- `src/components` -> componentes reutilizables (Navbar, Sidebar, Footer, ProductCard)
-- `src/views` -> vistas (LoginView, DashboardView, ProductView)
-- `src/services/api.js` -> consumo de API
-- `public/users.json` -> usuarios de ejemplo para login (educativo)
-
-## Instrucciones
-1. `npm install`
-2. `npm run dev`
-3. Abrir `http://localhost:5173` (según Vite)
-
-## Login
-Credenciales en `public/users.json`: `admin/admin123` o `user/user123`. 
-> Nota: validación educativa con JSON local; no es un sistema seguro.
-
-## CRUD de Productos
-- Se usa FakeStoreApi para listar y simular creación/actualización/eliminación.
-- En la entrega se debe explicar que algunas acciones son simuladas y que para producción se usaría una API real con autenticación.
-
-## Evidencia de colaboración
-Agregar commits, ramas y PRs en tu repositorio.
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).

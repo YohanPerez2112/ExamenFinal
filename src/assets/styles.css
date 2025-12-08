@@ -1,0 +1,16 @@
+:root{
+  --primary: #ff6b6b;
+  --muted: #6b7280;
+}
+
+input, textarea, select, button {
+  border-radius: 10px !important;
+}
+
+.login-bg { background: linear-gradient(135deg,#0f1724,#1f2937); min-height:100vh; }
+
+.card { border-radius: 12px; }
+
+@media (max-width: 767px) {
+  .sidebar { display:none; }
+}
