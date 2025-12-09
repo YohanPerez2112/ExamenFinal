@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import UserService from "@/services/UserService"; // Asegúrate de la ruta correcta
+import UserService from "@/services/UserService"; 
 
 export default {
   data() {
