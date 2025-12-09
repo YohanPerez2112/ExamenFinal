@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_BASE = "https://fakestoreapi.com";
+const API_BASE = "https://693793aef8dc350aff349870.mockapi.io/ApiExamenFinal";
 
 export default {
   async listProducts() {

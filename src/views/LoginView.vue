@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import UserService from "@/services/UserService"; // Asegúrate de la ruta correcta
+
 export default {
   data() {
     return {
@@ -46,9 +48,8 @@ export default {
 
   async created() {
     try {
-      const res = await fetch("/users.json");
-      const json = await res.json();
-      this.users = json.users || [];
+      // Llamada a la API en lugar del JSON local
+      this.users = await UserService.listUsers();
     } catch (e) {
       this.$root.showToast("No se pudo cargar usuarios", "danger");
     }
@@ -69,42 +70,37 @@ export default {
     },
 
     login() {
-  if (this.locked) return;
-  this.loading = true;
+      if (this.locked) return;
+      this.loading = true;
 
-  setTimeout(() => {
-    const found = this.users.find(
-      u => u.username === this.username && u.password === this.password
-    );
+      setTimeout(() => {
+        const found = this.users.find(
+          u => u.username === this.username && u.password === this.password
+        );
 
-    if (!found) {
-      this.attempts++;
-      this.$root.showToast("Usuario o contraseña incorrectos", "danger");
+        if (!found) {
+          this.attempts++;
+          this.$root.showToast("Usuario o contraseña incorrectos", "danger");
 
-      if (this.attempts >= 3) {
-        this.startLock();
-        this.$root.showToast("Bloqueado temporalmente por demasiados intentos", "warning");
-      }
+          if (this.attempts >= 3) {
+            this.startLock();
+            this.$root.showToast("Bloqueado temporalmente por demasiados intentos", "warning");
+          }
 
-      this.loading = false;
-      return;
+          this.loading = false;
+          return;
+        }
+
+        localStorage.setItem("currentUser", JSON.stringify(found));
+        this.$root.showToast(`Bienvenido ${found.name || found.username}`, "success");
+        this.$router.push("/dashboard/productos");
+        this.loading = false;
+      }, 600);
     }
-
-    
-    localStorage.setItem("currentUser", JSON.stringify(found));
-
-    this.$root.showToast(`Bienvenido ${found.name || found.username}`, "success");
-
-  
-    this.$router.push("/dashboard/productos");
-
-    this.loading = false;
-  }, 600);
-}
-
   }
 };
 </script>
+
 
 <style scoped>
 .login-bg {
