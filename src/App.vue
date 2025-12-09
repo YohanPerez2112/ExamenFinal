@@ -85,7 +85,7 @@ export default {
 
   data() {
     return {
-      currentUser: JSON.parse(sessionStorage.getItem("user")) || null,
+currentUser: JSON.parse(localStorage.getItem("currentUser")) || null,
 
       confirmResolve: null,
       editResolve: null,
@@ -102,6 +102,12 @@ export default {
   },
 
   methods: {
+  
+        setCurrentUser(user) {
+        this.currentUser = user;
+         },
+
+
   
     showToast(msg, color = "primary") {
       const toastEl = document.getElementById("appToast");

@@ -33,7 +33,8 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-  const savedUser = JSON.parse(sessionStorage.getItem("user"));
+  const savedUser = JSON.parse(localStorage.getItem("currentUser"));
+
 
   if (to.meta.requiresAdmin) {
     if (!savedUser || savedUser.role !== "admin") {
