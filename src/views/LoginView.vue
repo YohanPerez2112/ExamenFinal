@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import UserService from "@/services/UserService"; // Asegúrate de la ruta correcta
+import UserService from "@/services/UserService"; 
 
 export default {
   data() {
@@ -48,7 +48,6 @@ export default {
 
   async created() {
     try {
-      // Llamada a la API en lugar del JSON local
       this.users = await UserService.listUsers();
     } catch (e) {
       this.$root.showToast("No se pudo cargar usuarios", "danger");

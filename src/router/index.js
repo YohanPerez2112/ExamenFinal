@@ -11,7 +11,7 @@ const routes = [
     path: "/dashboard",
     component: DashboardView,
     children: [
-      // 🔥 Redirección correcta
+      
       { path: "", redirect: "productos" },
 
       { path: "productos", component: ProductView },
