@@ -1,24 +1,47 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import LoginView from '../views/LoginView.vue'
-import DashboardView from '../views/DashboardView.vue'
-import ProductView from '../views/ProductView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import LoginView from "../views/LoginView.vue";
+import DashboardView from "../views/DashboardView.vue";
+import ProductView from "../views/ProductView.vue";
 
 const routes = [
-  { path: '/', redirect: '/login' },
-  { path: '/login', component: LoginView },
+  { path: "/", redirect: "/login" },
+  { path: "/login", component: LoginView },
+
   {
-    path: '/dashboard',
+    path: "/dashboard",
     component: DashboardView,
     children: [
-      { path: '', redirect: '/dashboard/productos' },
-      { path: 'productos', component: ProductView }
+      // 🔥 Redirección correcta
+      { path: "", redirect: "productos" },
+
+      { path: "productos", component: ProductView },
+
+      {
+        path: "users",
+        name: "users",
+        component: () => import("../views/UserView.vue"),
+        meta: { requiresAdmin: true }
+      }
     ]
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes
-})
+});
 
-export default router
+
+router.beforeEach((to, from, next) => {
+  const savedUser = JSON.parse(sessionStorage.getItem("user"));
+
+  if (to.meta.requiresAdmin) {
+    if (!savedUser || savedUser.role !== "admin") {
+      return next("/dashboard/productos");
+    }
+  }
+
+  next();
+});
+
+export default router;

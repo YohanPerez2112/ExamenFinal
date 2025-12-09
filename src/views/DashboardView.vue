@@ -20,24 +20,28 @@ import NavbarComponent from "@/components/NavbarComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 
 export default {
+  name: "DashboardView",
   components: { SidebarComponent, NavbarComponent, FooterComponent },
+
   data() {
-    return { userName: "Invitado" };
+    const user = JSON.parse(localStorage.getItem("currentUser"));
+    return {
+      user,
+      userName: user ? (user.name || user.username) : "Invitado"
+    };
   },
+
   created() {
-    const user = JSON.parse(sessionStorage.getItem("user"));
-    if (!user) return this.$router.push("/login");
-    this.userName = user.name || user.username;
+    if (!this.user) {
+      this.$router.push("/login");
+    }
   },
+
   methods: {
     logout() {
-      sessionStorage.removeItem("user");
+      localStorage.removeItem("currentUser");
       this.$router.push("/login");
     }
   }
 };
 </script>
-
-<style scoped>
-.min-vh-100 { min-height: 100vh; }
-</style>

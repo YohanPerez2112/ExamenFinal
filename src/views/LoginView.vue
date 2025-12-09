@@ -15,14 +15,16 @@
         </div>
 
         <div class="d-flex justify-content-between align-items-center mb-3">
-          <small class="text-muted">Inténtos: {{ attempts }}/3</small>
+          <small class="text-muted">Intentos: {{ attempts }}/3</small>
           <button class="btn btn-primary" :disabled="locked">
-            <span v-if="loading" class="spinner-border spinner-border-sm me-2" role="status"></span>
+            <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
             Entrar
           </button>
         </div>
 
-        <div v-if="locked" class="alert alert-warning p-2">Has excedido los intentos. Intenta en {{ lockSeconds }}s</div>
+        <div v-if="locked" class="alert alert-warning p-2">
+          Has excedido los intentos. Intenta en {{ lockSeconds }}s
+        </div>
       </form>
     </div>
   </div>
@@ -41,6 +43,7 @@ export default {
       loading: false
     };
   },
+
   async created() {
     try {
       const res = await fetch("/users.json");
@@ -50,6 +53,7 @@ export default {
       this.$root.showToast("No se pudo cargar usuarios", "danger");
     }
   },
+
   methods: {
     startLock() {
       this.locked = true;
@@ -63,30 +67,41 @@ export default {
         }
       }, 1000);
     },
+
     login() {
-      if (this.locked) return;
-      this.loading = true;
+  if (this.locked) return;
+  this.loading = true;
 
-      setTimeout(() => {
-        const found = this.users.find(u => u.username === this.username && u.password === this.password);
+  setTimeout(() => {
+    const found = this.users.find(
+      u => u.username === this.username && u.password === this.password
+    );
 
-        if (!found) {
-          this.attempts++;
-          this.$root.showToast("Usuario o contraseña incorrectos", "danger");
-          if (this.attempts >= 3) {
-            this.startLock();
-            this.$root.showToast("Bloqueado temporalmente por demasiados intentos", "warning");
-          }
-          this.loading = false;
-          return;
-        }
+    if (!found) {
+      this.attempts++;
+      this.$root.showToast("Usuario o contraseña incorrectos", "danger");
 
-        sessionStorage.setItem("user", JSON.stringify(found));
-        this.$root.showToast(`Bienvenido ${found.name || found.username}`, "success");
-        this.$router.push("/dashboard");
-        this.loading = false;
-      }, 600);
+      if (this.attempts >= 3) {
+        this.startLock();
+        this.$root.showToast("Bloqueado temporalmente por demasiados intentos", "warning");
+      }
+
+      this.loading = false;
+      return;
     }
+
+    
+    localStorage.setItem("currentUser", JSON.stringify(found));
+
+    this.$root.showToast(`Bienvenido ${found.name || found.username}`, "success");
+
+  
+    this.$router.push("/dashboard/productos");
+
+    this.loading = false;
+  }, 600);
+}
+
   }
 };
 </script>
@@ -97,5 +112,7 @@ export default {
   background: linear-gradient(135deg, #0f1724, #1f2937);
   background-size: cover;
 }
-.card { border-radius: 14px; }
+.card {
+  border-radius: 14px;
+}
 </style>
