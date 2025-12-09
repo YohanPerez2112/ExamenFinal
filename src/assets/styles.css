@@ -1,16 +1,26 @@
 :root{
-  --primary: #ff6b6b;
-  --muted: #6b7280;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --border: #e2e8f0;
 }
 
 input, textarea, select, button {
   border-radius: 10px !important;
 }
 
-.login-bg { background: linear-gradient(135deg,#0f1724,#1f2937); min-height:100vh; }
+.login-bg { 
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); 
+  min-height: 100vh; 
+}
 
-.card { border-radius: 12px; }
+.card { 
+  border-radius: 12px;
+  background: rgb(154, 217, 240);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 767px) {
-  .sidebar { display:none; }
+  .sidebar { 
+    display: none; 
+  }
 }
